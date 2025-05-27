@@ -133,7 +133,7 @@ const breadcrumbs = computed(() => {
 })
 
 // 菜单选择事件
-const handleMenuSelect = (key) => {
+const handleMenuSelect = (key: string) => {
   console.log(key, 'key')
   router.push({ name: key })
 }

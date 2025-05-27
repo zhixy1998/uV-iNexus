@@ -1,21 +1,22 @@
 import { useLoadingStore } from '@/stores'
-import type { AxiosInstance } from 'axios'
+import type { AxiosError, AxiosInstance, InternalAxiosRequestConfig, AxiosResponse } from 'axios'
 const loadingStore = useLoadingStore()
 // 添加请求拦截器
 export const setupInterceptors = (axios: AxiosInstance) => {
-  const reqResolve = (config) => {
+  const reqResolve = (config: InternalAxiosRequestConfig) => {
     // TODO: 在请求之间添加token
     loadingStore.startLoading()
     return config
   }
-  const reqReject = (error) => {
+  const reqReject = (error: AxiosError) => {
     return Promise.reject(error)
   }
-  const resResolve = (response) => {
+  const resResolve = (response: AxiosResponse) => {
     loadingStore.finishLoading()
     return response
   }
-  const resReject = (error) => {
+  const resReject = (error: AxiosError) => {
+    console.error('Response error:', error)
     loadingStore.finishLoading()
   }
   // 请求拦截器

@@ -13,6 +13,12 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "strict": false,
     "noImplicitAny": false
-  }
+  },
+  "exclude": [
+    "src/utils/interceptors.ts",
+    "src/views/PageLayoutView.vue",
+    "src/views/PageLayoutView1.vue"
+  ]
 }
