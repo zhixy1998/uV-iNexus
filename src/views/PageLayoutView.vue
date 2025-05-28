@@ -30,7 +30,24 @@
         <n-menu :options="menuOptions" :collapsed="collapsed" :collapsed-width="64" :collapsed-icon-size="20"
           @update:value="handleMenuSelect" />
       </n-layout-sider>
-      <n-layout content-style="padding: 24px;" :native-scrollbar="false">
+      <n-layout :native-scrollbar="false">
+        <n-layout-header bordered class="p-4 bg-white">
+          <div class="flex items-center">
+            <n-button text class="mr-4" @click="collapsed = !collapsed">
+              <template #icon>
+                <n-icon>
+                  <menu-icon />
+                </n-icon>
+              </template>
+            </n-button>
+            <n-breadcrumb>
+              <n-breadcrumb-item v-for="item in breadcrumbs" :key="item">
+                {{ item }}
+              </n-breadcrumb-item>
+            </n-breadcrumb>
+          </div>
+        </n-layout-header>
+
         <n-spin size="large" :show="loadingStore.isLoading">
           <transition name="fade-slide" mode="out-in" appear>
             <router-view />
@@ -54,79 +71,74 @@ import {
 } from '@vicons/ionicons5'
 import { computed, h, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { useLoadingStore } from '@/stores'
-
+import { useLoadingStore, usePermissionStore } from '@/stores'
 const router = useRouter()
 const route = useRoute()
 const loadingStore = useLoadingStore()
-
+const permissionStore = usePermissionStore()
+import { realMenus } from '@/setting'
 // 侧边栏折叠状态
 const collapsed = ref(false)
 
 // 菜单数据
-const menuOptions = [
-  {
-    label: '首页',
-    key: '/home',
-    icon: () => h(BookIcon, null, { default: () => h(BookIcon) })
-  },
-  {
-    label: '仪器管理',
-    key: '/instrument',
-    icon: () => h(BookIcon, null, { default: () => h(UserIcon) }),
-    children: [
-      { label: '开机自检', key: '/powercheck' },
-      { label: '仪器配置', key: '/instrumentconfig' },
-      {
-        label: '自动进样器配置', key: '/autolabconfig',
-        children: [
-          { label: '进样器参数盘配置', key: '/autolabconfig-1' },
-        ]
-      },
-      { label: '仪器校准', key: '/instrumentcalibration' },
-      {
-        label: '仪器使用统计详情', key: '/instrumentstatistics',
-        children: [
-          { label: '检测任务详细信息', key: '/instrumentstatistics-1' },
-        ]
-      },
-      { label: '仪器使用记录详情', key: '/instrumentrecord' },
-    ]
-  },
-  {
-    label: '仪器管理',
-    key: '/instrument',
-    icon: () => h(BookIcon, null, { default: () => h(UserIcon) }),
-    children: [
-      { label: '开机自检', key: '/powercheck' },
-      { label: '仪器配置', key: '/instrumentconfig' },
-      {
-        label: '自动进样器配置', key: '/autolabconfig',
-        children: [
-          { label: '进样器参数盘配置', key: '/autolabconfig-1' },
-        ]
-      },
-      { label: '仪器校准', key: '/instrumentcalibration' },
-      {
-        label: '仪器使用统计详情', key: '/instrumentstatistics',
-        children: [
-          { label: '检测任务详细信息', key: '/instrumentstatistics-1' },
-        ]
-      },
-      { label: '仪器使用记录详情', key: '/instrumentrecord' },
-    ]
-  },
-]
-console.log(router.getRoutes(), 'route')
-// const menuOptions = computed(() => {
-//   return router.getRoutes().map((route) => ({
-//     name: route.name,
-//     path: route.path,
-//     meta: route.meta,
-//     children: route.children,
-//   }));
-// });
-
+// const menuOptions = [
+//   {
+//     label: '首页',
+//     key: '/home',
+//     icon: () => h(BookIcon, null, { default: () => h(BookIcon) })
+//   },
+//   {
+//     label: '仪器管理',
+//     key: '/instrument',
+//     icon: () => h(BookIcon, null, { default: () => h(UserIcon) }),
+//     children: [
+//       { label: '开机自检', key: '/powercheck' },
+//       { label: '仪器配置', key: '/instrumentconfig' },
+//       {
+//         label: '自动进样器配置', key: '/autolabconfig',
+//         children: [
+//           { label: '进样器参数盘配置', key: '/autolabconfig-1' },
+//         ]
+//       },
+//       { label: '仪器校准', key: '/instrumentcalibration' },
+//       {
+//         label: '仪器使用统计详情', key: '/instrumentstatistics',
+//         children: [
+//           { label: '检测任务详细信息', key: '/instrumentstatistics-1' },
+//         ]
+//       },
+//       { label: '仪器使用记录详情', key: '/instrumentrecord' },
+//     ]
+//   },
+//   {
+//     label: '仪器管理',
+//     key: '/instrument',
+//     icon: () => h(BookIcon, null, { default: () => h(UserIcon) }),
+//     children: [
+//       { label: '开机自检', key: '/powercheck' },
+//       { label: '仪器配置', key: '/instrumentconfig' },
+//       {
+//         label: '自动进样器配置', key: '/autolabconfig',
+//         children: [
+//           { label: '进样器参数盘配置', key: '/autolabconfig-1' },
+//         ]
+//       },
+//       { label: '仪器校准', key: '/instrumentcalibration' },
+//       {
+//         label: '仪器使用统计详情', key: '/instrumentstatistics',
+//         children: [
+//           { label: '检测任务详细信息', key: '/instrumentstatistics-1' },
+//         ]
+//       },
+//       { label: '仪器使用记录详情', key: '/instrumentrecord' },
+//     ]
+//   },
+// ]
+permissionStore.setPermissionMenus(realMenus)
+const menuOptions = permissionStore.permissionMenus
+const accessRoute = permissionStore.accessRoutes
+// console.log('accessRoute', accessRoute)
+router.addRoute(accessRoute)
 // 面包屑 (根据当前路由动态生成)
 const breadcrumbs = computed(() => {
   return route.matched.map(item => item.meta.title || item.name)
@@ -135,7 +147,7 @@ const breadcrumbs = computed(() => {
 // 菜单选择事件
 const handleMenuSelect = (key: string) => {
   console.log(key, 'key')
-  router.push({ name: key })
+  router.push({ path: key })
 }
 </script>
 
