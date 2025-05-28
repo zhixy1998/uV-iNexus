@@ -1,30 +1,34 @@
 import { defineStore } from 'pinia'
-import { defineAsyncComponent } from 'vue'
+interface MenuItem {
+  key: string
+  label: string
+  children?: MenuItem[]
+}
 
-// interface MenuItem {
-//   label: string
-//   key: string
-//   name?: string
-//   children?: MenuItem[]
-//   meta?: Record<string, any>
-// }
+interface RouteItem {
+  path: string
+  name: string
+  component: any
+  meta: { title: string }
+  children: RouteItem[]
+}
 export const usePermissionStore = defineStore('permission', {
   state: () => ({
     // 菜单权限
-    permissionMenus: [],
+    permissionMenus: [] as MenuItem[],
     // 可访问的路由
-    accessRoutes: [],
+    accessRoutes: [] as RouteItem[],
   }),
   actions: {
-    setPermissionMenus(menus) {
+    setPermissionMenus(menus: MenuItem[]) {
       this.permissionMenus = menus
       this.accessRoutes = this.generateRoutes(menus)
     },
-    generateRoutes(menus) {
-      return menus.reduce((routes, menu) => {
-        const route = {
-          path: menu.key, // 取最后一段作为子路径
-          name: menu.label,
+    generateRoutes(menus: MenuItem[]) {
+      return menus.reduce((routes: RouteItem[], menu) => {
+        const route: RouteItem = {
+          path: menu.key,
+          name: menu.label.replace(/\s+/g, ''), // 移除空格作为name
           component: this.getComponentByPath(menu.key),
           meta: {
             title: menu.label,
@@ -32,41 +36,45 @@ export const usePermissionStore = defineStore('permission', {
           children: [],
         }
         // 处理子菜单
-        if (menu.children && menu.children.length > 0) {
+        if (menu.children?.length) {
           route.children = this.generateRoutes(menu.children)
-          // 如果父路由没有指定组件，使用布局组件
-          if (!route.component) {
-            route.component = defineAsyncComponent(() => import('@/views/PageLayoutView.vue'))
-          }
         }
         routes.push(route)
         return routes
       }, [])
     },
+
     /**
      * 根据路径动态导入组件
-     * @param path 路由路径
      */
     getComponentByPath(path: string) {
-      // 移除开头的斜杠并转换路径格式
+      if (!path) return null
       const componentPath = this.routePathToComponentPath(path)
-      try {
-        return defineAsyncComponent(() => import(componentPath))
-      } catch (e) {
-        console.warn(`组件未找到: @/views/${componentPath}.vue`)
+      if (!componentPath) return null
+      console.log('componentPath', path, componentPath)
+      // 返回实际的动态导入函数
+      return () => import(/* @vite-ignore */ `${componentPath}`).catch((err) => console.error(err)) // 添加错误处理
+    },
+
+    /**
+     * 转换路由路径为组件路径
+     */
+    routePathToComponentPath(routePath: string) {
+      if (!routePath) return null
+      // 标准化路径
+      const normalizedPath = routePath.replace(/^\/|\/$/g, '')
+      const parts = normalizedPath.split('/')
+      // 特殊路由处理
+      if (normalizedPath === 'home') {
+        return '/src/views/HomeView.vue'
+      }
+      // 通用转换逻辑
+      const lastPart = parts[parts.length - 1]
+      const componentName = lastPart.charAt(0).toUpperCase() + lastPart.slice(1)
+      if (parts.length === 1) {
         return null
       }
-    },
-    routePathToComponentPath(routePath: string) {
-      const parts = routePath.replace(/^\/|\/$/g, '').split('/')
-      if (parts.length > 1) {
-        const componentName =
-          parts[parts.length - 1].charAt(0).toUpperCase() + parts[parts.length - 1].slice(1)
-        const directory = parts[0]
-        return `@/views/${directory}/${componentName}.vue`
-      } else if (parts[0] === '/home') {
-        return '@/views/HomeView.vue'
-      }
+      return `/src/views/${parts[0]}/${componentName}.vue`
     },
   },
 })

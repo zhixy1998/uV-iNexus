@@ -1,10 +1,8 @@
 <template>
   <div class="w-full h-screen">
-    <n-config-provider :theme-overrides="appStore.naiveThemeOverrides">
-      <n-message-provider>
-        <RouterView />
-      </n-message-provider>
-    </n-config-provider>
+    <a-config-provider :theme="appStore.naiveThemeOverrides">
+      <RouterView />
+    </a-config-provider>
   </div>
 </template>
 
