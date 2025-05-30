@@ -1,6 +1,6 @@
 <template>
   <a-layout class="h-screen">
-    <a-layout-header class="flex items-center justify-between" style="background: #fff; padding: 16px">
+    <a-layout-header class="flex items-center justify-between" style="background: #fff; padding: 16px;height: 64px;">
       <div class="flex items-center gap-4">
         <img class="h-8" src="@/assets/images/logo2.png" alt="Logo" />
       </div>
@@ -12,7 +12,7 @@
       </div>
     </a-layout-header>
     <a-layout>
-      <a-layout-sider v-model:collapsed="collapsed" collapsible>
+      <a-layout-sider v-model:collapsed="collapsed" collapsible style="height: calc(100vh - 64px)">
         <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline" @select="onSelect">
           <template v-for="item in menuOptions" :key="item.key">
             <a-sub-menu v-if="item.children" :key="item.key">
@@ -38,12 +38,13 @@
         </a-menu>
       </a-layout-sider>
       <a-layout>
-        <a-breadcrumb style="margin: 16px 16px">
+        <a-breadcrumb style="margin: 16px 16px; height: 22px">
           <a-breadcrumb-item v-for="item in breadcrumbs" :key="item">
             {{ item }}
           </a-breadcrumb-item>
         </a-breadcrumb>
-        <a-layout-content :style="{ background: '#fff', padding: '16px', margin: 0, minHeight: '280px' }">
+        <a-layout-content
+          :style="{ background: '#fff', padding: '16px 20px', margin: 0, maxHeight: 'calc(100vh - 158px)', overflow: 'auto' }">
           <transition name="fade-slide" mode="out-in" appear>
             <a-spin :spinning="loadingStore.isLoading">
               <router-view v-slot="{ Component }">
@@ -89,4 +90,8 @@ const onSelect = ({ key }) => {
   router.push({ path: key })
 }
 </script>
-<style scoped lang="less"></style>
+<style scoped>
+/* .main {
+  .main-content {}
+} */
+</style>
