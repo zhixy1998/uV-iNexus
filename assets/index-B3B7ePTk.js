@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{k as r,i as n,o as a,j as s,p as _}from"./index-XNPot0P1.js";const c={};function p(i,t){const o=r("a-button");return a(),n(o,{type:"primary"},{default:s(()=>t[0]||(t[0]=[_("Primary Button")])),_:1,__:[0]})}const u=e(c,[["render",p]]);export{u as default};
