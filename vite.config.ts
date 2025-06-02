@@ -6,7 +6,7 @@ import { defineConfig } from 'vite'
 import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/UV-INEXUS/' : '/',
+  base: mode === 'production' ? '/uV-iNexus/' : '/',
   plugins: [vue(), tailwindcss(), vueDevTools()],
   resolve: {
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
