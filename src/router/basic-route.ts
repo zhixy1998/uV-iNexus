@@ -10,12 +10,12 @@ export const basicRoutes = [
   {
     path: '/',
     redirect: '/home',
-    component: () => import('@/views/PageLayoutView.vue'),
+    component: import('@/views/PageLayoutView.vue'),
     children: [
       {
         path: 'home',
         name: 'home',
-        component: () => import('@/views/HomeView.vue'),
+        component: import('@/views/HomeView.vue'),
         meta: {
           title: '首页',
         },
