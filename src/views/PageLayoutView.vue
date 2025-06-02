@@ -1,6 +1,9 @@
 <template>
   <a-layout class="h-screen">
-    <a-layout-header class="flex items-center justify-between" style="background: #fff; padding: 16px;height: 64px;">
+    <a-layout-header
+      class="flex items-center justify-between"
+      style="background: #fff; padding: 16px; height: 64px"
+    >
       <div class="flex items-center gap-4">
         <img class="h-8" src="@/assets/images/logo2.png" alt="Logo" />
       </div>
@@ -44,7 +47,14 @@
           </a-breadcrumb-item>
         </a-breadcrumb>
         <a-layout-content
-          :style="{ background: '#fff', padding: '16px 20px', margin: 0, maxHeight: 'calc(100vh - 158px)', overflow: 'auto' }">
+          :style="{
+            background: '#fff',
+            padding: '16px 20px',
+            margin: 0,
+            maxHeight: 'calc(100vh - 158px)',
+            overflow: 'auto',
+          }"
+        >
           <transition name="fade-slide" mode="out-in" appear>
             <a-spin :spinning="loadingStore.isLoading">
               <router-view v-slot="{ Component }">
@@ -60,7 +70,7 @@
   </a-layout>
 </template>
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useLoadingStore } from '@/stores'
 import { StepBackwardOutlined } from '@ant-design/icons-vue'
@@ -71,7 +81,7 @@ const loadingStore = useLoadingStore()
 import { realMenus } from '@/setting'
 // 侧边栏折叠状态
 const collapsed = ref(false)
-const selectedKeys = ref<string[]>(['1']);
+const selectedKeys = ref<string[]>(['1'])
 const menuOptions = ref(realMenus)
 // 菜单数据
 // permissionStore.setPermissionMenus(realMenus)
@@ -80,12 +90,15 @@ const menuOptions = ref(realMenus)
 // // console.log('accessRoute', accessRoute)
 // router.addRoute(accessRoute)
 // 面包屑 (根据当前路由动态生成)
+watch(route, (newRoute, oldRoute) => {
+  selectedKeys.value = [newRoute.fullPath]
+})
 const breadcrumbs = computed(() => {
-  return route.matched.map(item => item.meta.title || item.name)
+  return route.matched.map((item) => item.meta.title || item.name)
 })
 
-const onSelect = ({ key }) => {
-  selectedKeys.value = [key];
+const onSelect = ({ key }: { key: string }) => {
+  selectedKeys.value = [key]
   // 这里可以添加路由跳转逻辑
   router.push({ path: key })
 }

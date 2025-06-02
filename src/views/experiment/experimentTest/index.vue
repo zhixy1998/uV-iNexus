@@ -3,35 +3,40 @@
     <headTitle title="快速测量">
       <template #btn>
         <div class="gap-4">
-          <a-button block> <template #icon>
+          <uvHasIconBtn content="download">
+            <template #icon>
               <DownloadOutlined />
-              Download
-            </template></a-button>
+            </template>
+          </uvHasIconBtn>
         </div>
       </template>
     </headTitle>
     <br />
     <div>
-      您可以直接完成：<span v-for="(item, index) in permissExperiment" :key="`${index}`">{{ item.pemissLabel }}&nbsp;</span>
+      您可以直接完成：<span
+        class="cursor-pointer"
+        @click="goOtherPage(item.path)"
+        v-for="(item, index) in permissExperiment"
+        :key="`${index}`"
+        >{{ item.pemissLabel }}&nbsp;&nbsp;&nbsp;</span
+      >
     </div>
     <br />
     <headTitle title="最近的任务">
       <template #btn>
         <div class="gap-4">
-          <a-button block> <template #icon>
+          <uvHasIconBtn content="download">
+            <template #icon>
               <DownloadOutlined />
-              Download
             </template>
-          </a-button>
+          </uvHasIconBtn>
         </div>
       </template>
     </headTitle>
     <br />
     <div>
       <customCard v-for="item in permissExperiment" :key="`${item}`">
-        <template #left>
-          地表水202505241426
-        </template>
+        <template #left> 地表水202505241426 </template>
         <template #right>
           <div class="gap-4">
             <p>使用方法：地表水二氧化硫测量国标方法</p>
@@ -43,63 +48,76 @@
       </customCard>
       <headTitle title="项目统计">
         <template #center>
-          <a-input-search v-model:value="value" placeholder="input search text" style="width: 200px"
-            @search="onSearch" />
+          <a-input-search
+            v-model:value="value"
+            placeholder="input search text"
+            style="width: 200px"
+            @search="onSearch"
+          />
         </template>
         <template #btn>
           <div class="gap-4">
-            <a-button block> <template #icon>
+            <uvHasIconBtn content="download">
+              <template #icon>
                 <DownloadOutlined />
-                Download
-              </template></a-button>
+              </template>
+            </uvHasIconBtn>
           </div>
         </template>
       </headTitle>
     </div>
     <br />
     <div>
-      您一共参与了<span>10</span>个项目， 其中建立方法<span>25</span>个， 完成测量任务<span>0</span>个
+      您一共参与了<span>10</span>个项目， 其中建立方法<span>25</span>个，
+      完成测量任务<span>0</span>个
     </div>
     <br />
     <a-table :dataSource="dataSource" :columns="columns" :paginatio="false">
       <template #bodyCell="{ column }">
         <template v-if="column.key === 'operation'">
-          <a-button block> <template #icon>
+          <uvHasIconBtn content="download">
+            <template #icon>
               <DownloadOutlined />
-              Download
             </template>
-          </a-button>
+          </uvHasIconBtn>
         </template>
       </template>
     </a-table>
     <br />
     <a-card title="项目1">
       <template #extra>
-        <div class="gap-4">
+        <div class="flex gap-4">
           <span>创建人:admin</span>
           <span>创建时间:2025-05-10</span>
         </div>
       </template>
-      <div class="gap-4">
+      <div class="flex gap-4">
         <a-button>新建方法</a-button>
         <a-button>新建任务</a-button>
       </div>
-      <h2>项目方法列表信息</h2>
+      <br />
+      <h2 class="text-l">项目方法列表信息</h2>
+      <br />
       <div class="flex items-center gap-4">
         <div>指定方法</div>
-        <a-select v-model:value="selectValue" mode="multiple" placeholder="Please select"
+        <a-select
+          style="width: 375px"
+          v-model:value="selectValue"
+          mode="multiple"
+          placeholder="Please select"
           :options="[...Array(25)].map((_, i) => ({ value: (i + 10).toString(36) + (i + 1) }))"
-          @change="handleChange"></a-select>
+          @change="handleChange"
+        ></a-select>
       </div>
       <br />
       <a-table :dataSource="dataSourceCopy" :columns="columns" :pagination="paginationConfig">
         <template #bodyCell="{ column }">
           <template v-if="column.key === 'operation'">
-            <a-button block> <template #icon>
+            <uvHasIconBtn content="download">
+              <template #icon>
                 <DownloadOutlined />
-                Download
               </template>
-            </a-button>
+            </uvHasIconBtn>
           </template>
         </template>
       </a-table>
@@ -107,20 +125,35 @@
   </div>
 </template>
 <script lang="ts" setup>
+import uvHasIconBtn from '@/components/uvHasIconBtn/index.vue'
 import headTitle from '@/components/headTitle'
 import customCard from './components/customCard.vue'
 import { DownloadOutlined } from '@ant-design/icons-vue'
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 const permissExperiment = ref([
   {
-    pemissLabel: '光度测量'
-  }, {
-    pemissLabel: '定量测定'
-  }, {
-    pemissLabel: '光谱扫描'
-  }
+    pemissLabel: '光度测量',
+    path: 'lumneScence',
+  },
+  {
+    pemissLabel: '定量测定',
+    path: 'quantityDetermind',
+  },
+  {
+    pemissLabel: '光谱扫描',
+    path: 'spectralScan',
+  },
+  {
+    pemissLabel: '时间扫描',
+    path: 'timeScan',
+  },
+  {
+    pemissLabel: '双分组测量',
+    path: 'twoComponentMeasure',
+  },
 ])
-const value = ref('');
+const value = ref('')
 const dataSource = ref([
   {
     key: '1',
@@ -154,11 +187,12 @@ const columns = ref([
   {
     key: 'operation',
     title: '操作',
-  }
+  },
 ])
 const handleChange = (value: string[]) => {
-  console.log(`selected ${value}`);
-};
+  console.log(`selected ${value}`)
+}
+const router = useRouter()
 const dataSourceCopy = ref([])
 // 生成数据的方法
 // const generateData = () => {
@@ -172,12 +206,13 @@ const dataSourceCopy = ref([])
 
 // 立即调用生成数据
 // generateData();
-const paginationConfig = ref({
-
-})
-const selectValue = ref(['a1', 'b2']);
+const paginationConfig = ref({})
+const selectValue = ref(['a1', 'b2'])
 const onSearch = (searchValue: string) => {
-  console.log('use value', searchValue);
-  console.log('or use this.value', value.value);
-};
+  console.log('use value', searchValue)
+  console.log('or use this.value', value.value)
+}
+const goOtherPage = (path:string) => {
+  router.push({ name: path })
+}
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-between border-b py-2">
+  <div class="flex items-center justify-between border-b py-3">
     <div class="text-xl flex">
       <span>{{ title }}</span>
       <slot name="leftExtra"></slot>
