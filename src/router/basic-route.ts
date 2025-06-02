@@ -1,3 +1,5 @@
+import HomeView from '@/views/HomeView.vue'
+import PageLayoutView from '@/views/PageLayoutView.vue'
 export const basicRoutes = [
   {
     path: '/login',
@@ -10,12 +12,12 @@ export const basicRoutes = [
   {
     path: '/',
     redirect: '/home',
-    component: import('@/views/PageLayoutView.vue'),
+    component: PageLayoutView,
     children: [
       {
         path: 'home',
         name: 'home',
-        component: import('@/views/HomeView.vue'),
+        component: HomeView,
         meta: {
           title: '首页',
         },
