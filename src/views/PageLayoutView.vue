@@ -1,9 +1,6 @@
 <template>
   <a-layout class="h-screen">
-    <a-layout-header
-      class="flex items-center justify-between"
-      style="background: #fff; padding: 16px; height: 64px"
-    >
+    <a-layout-header class="flex items-center justify-between" style="background: #fff; padding: 16px; height: 64px">
       <div class="flex items-center gap-4">
         <img class="h-8" src="@/assets/images/logo2.png" alt="Logo" />
       </div>
@@ -46,15 +43,13 @@
             {{ item }}
           </a-breadcrumb-item>
         </a-breadcrumb>
-        <a-layout-content
-          :style="{
-            background: '#fff',
-            padding: '16px 20px',
-            margin: 0,
-            maxHeight: 'calc(100vh - 158px)',
-            overflow: 'auto',
-          }"
-        >
+        <a-layout-content :style="{
+          background: '#fff',
+          padding: '16px 20px',
+          margin: 0,
+          maxHeight: 'calc(100vh - 158px)',
+          overflow: 'auto',
+        }">
           <transition name="fade-slide" mode="out-in" appear>
             <a-spin :spinning="loadingStore.isLoading">
               <router-view v-slot="{ Component }">
@@ -70,15 +65,16 @@
   </a-layout>
 </template>
 <script setup lang="ts">
+import { StepBackwardOutlined } from '@ant-design/icons-vue'
 import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+
+import { realMenus } from '@/setting'
 import { useLoadingStore } from '@/stores'
-import { StepBackwardOutlined } from '@ant-design/icons-vue'
 const router = useRouter()
 const route = useRoute()
 const loadingStore = useLoadingStore()
 // const permissionStore = usePermissionStore()
-import { realMenus } from '@/setting'
 // 侧边栏折叠状态
 const collapsed = ref(false)
 const selectedKeys = ref<string[]>(['1'])

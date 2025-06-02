@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+
 import { defaultPrimaryColor, naiveThemeOverrides } from '@/setting'
 export const useAppStore = defineStore('app', {
   state: () => ({

@@ -7,5 +7,5 @@
       <slot name="content"></slot>
     </div>
   </a-card>
-  <br/>
+  <br />
 </template>

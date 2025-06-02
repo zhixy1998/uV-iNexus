@@ -8,7 +8,7 @@ interface MenuItem {
 interface RouteItem {
   path: string
   name: string
-  component: any
+  component: unknown
   meta: { title: string }
   children: RouteItem[]
 }

@@ -16,8 +16,9 @@
 </template>
 
 <script lang="ts" setup>
-import PerSeeCollapse from '@/components/PerSeeCollapse.vue'
 import { onMounted, ref } from 'vue'
+
+import PerSeeCollapse from '@/components/PerSeeCollapse.vue'
 
 // 折叠面板
 const activeKey = ref<string>('')

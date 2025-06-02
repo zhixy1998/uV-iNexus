@@ -1,5 +1,6 @@
+import type { AxiosError, AxiosInstance, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
+
 import { useLoadingStore } from '@/stores'
-import type { AxiosError, AxiosInstance, InternalAxiosRequestConfig, AxiosResponse } from 'axios'
 const loadingStore = useLoadingStore()
 // 添加请求拦截器
 export const setupInterceptors = (axios: AxiosInstance) => {

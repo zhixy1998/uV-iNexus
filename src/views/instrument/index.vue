@@ -8,7 +8,6 @@
 <script lang="ts" setup>
 import OnOrOff from './components/OnOrOff.vue'
 import StateMonitor from './components/StateMonitor.vue'
-
 </script>
 
 <style scoped lang="less">

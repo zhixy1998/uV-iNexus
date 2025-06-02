@@ -97,13 +97,14 @@
 
 <script lang="ts" setup>
 import {
-  PoweroffOutlined,
-  SyncOutlined,
   CheckOutlined,
   LoadingOutlined,
+  PoweroffOutlined,
+  SyncOutlined,
 } from '@ant-design/icons-vue'
-import { onMounted, ref, type Ref } from 'vue'
+import { onMounted, type Ref, ref } from 'vue'
 import { useRoute } from 'vue-router'
+
 import PerSeeCollapse from '@/components/PerSeeCollapse.vue'
 
 // 折叠面板

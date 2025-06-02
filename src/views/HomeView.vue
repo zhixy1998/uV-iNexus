@@ -7,7 +7,7 @@
 @primary-color: #3498db;
 
 .home {
-  >h1 {
+  > h1 {
     color: @primary-color;
   }
 }

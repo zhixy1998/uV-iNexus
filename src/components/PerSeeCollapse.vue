@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, watch, type PropType } from 'vue'
+import { type PropType, ref, watch } from 'vue'
 
 const props = defineProps({
   parentActiveKey: {

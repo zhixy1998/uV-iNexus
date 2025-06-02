@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prepare": "husky install",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix",
+    "lint": "eslint src/**/*.{ts,vue}",
+    "lint:fix": "eslint src/**/*.{ts,vue} --fix",
+    "lint:style": "stylelint src/**/*.{less,css,vue}",
     "format": "prettier --write src/"
   },
   "dependencies": {
@@ -22,6 +25,8 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@tailwindcss/vite": "^4.1.7",
     "@tsconfig/node22": "^22.0.1",
     "@types/node": "^22.14.0",
@@ -30,11 +35,16 @@
     "@vue/eslint-config-typescript": "^14.5.0",
     "@vue/tsconfig": "^0.7.0",
     "eslint": "^9.22.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-vue": "~10.0.0",
+    "husky": "^9.1.7",
     "jiti": "^2.4.2",
     "less": "^4.3.0",
     "npm-run-all2": "^7.0.2",
     "prettier": "3.5.3",
+    "stylelint": "^16.20.0",
+    "stylelint-config-recommended-vue": "^1.6.0",
+    "stylelint-config-standard": "^38.0.0",
     "tailwindcss": "^4.1.7",
     "typescript": "~5.8.0",
     "vite": "^6.2.4",

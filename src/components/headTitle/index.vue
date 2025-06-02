@@ -8,8 +8,7 @@
       <slot name="center"></slot>
     </div>
 
-    <slot name="btn">
-    </slot>
+    <slot name="btn"> </slot>
   </div>
 </template>
 <script lang="ts" setup>

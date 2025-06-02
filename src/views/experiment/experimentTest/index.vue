@@ -125,12 +125,14 @@
   </div>
 </template>
 <script lang="ts" setup>
-import uvHasIconBtn from '@/components/uvHasIconBtn/index.vue'
-import headTitle from '@/components/headTitle'
-import customCard from './components/customCard.vue'
 import { DownloadOutlined } from '@ant-design/icons-vue'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+
+import headTitle from '@/components/headTitle'
+import uvHasIconBtn from '@/components/uvHasIconBtn/index.vue'
+
+import customCard from './components/customCard.vue'
 const permissExperiment = ref([
   {
     pemissLabel: '光度测量',
@@ -212,7 +214,7 @@ const onSearch = (searchValue: string) => {
   console.log('use value', searchValue)
   console.log('or use this.value', value.value)
 }
-const goOtherPage = (path:string) => {
+const goOtherPage = (path: string) => {
   router.push({ name: path })
 }
 </script>
