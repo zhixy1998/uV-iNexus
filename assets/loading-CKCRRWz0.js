@@ -1,1 +1,0 @@
-import{aU as n,A as o}from"./index-ob3tm0dU.js";const r=n("loading",()=>{const e=o(!1),a=o(0);return{isLoading:e,requestCount:a,startLoading:()=>{a.value++,e.value=!0},finishLoading:()=>{a.value--,a.value<=0&&(e.value=!1,a.value=0)}}});export{r as u};
