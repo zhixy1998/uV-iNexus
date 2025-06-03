@@ -29,6 +29,7 @@ export default defineConfigWithVueTs(
       ],
       // 添加 TypeScript 未使用变量规则的例外
       '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
     },
   },
 )

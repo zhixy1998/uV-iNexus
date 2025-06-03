@@ -12,9 +12,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import lineChart from '@/components/lineChart'
-import MathJax from '@/components/MathJax'
-import uvLight from '@/components/uvLight'
+import lineChart from '@/components/lineChart/index.vue'
+import MathJax from '@/components/MathJax/index.vue'
+import uvLight from '@/components/uvLight/index.vue'
 const formula = ref('$$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$')
 // 使用ref确保响应性
 const dynamicSize = ref(40)
@@ -31,7 +31,7 @@ const addManualPoint = () => {
 @primary-color: #3498db;
 
 .home {
-  > h1 {
+  >h1 {
     color: @primary-color;
   }
 }
