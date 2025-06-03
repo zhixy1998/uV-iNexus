@@ -1,1 +1,0 @@
-import{b as o,h as n,f as r,o as a,w as s,g as _}from"./index-BN-NyXqE.js";const c={};function f(p,t){const e=n("a-button");return a(),r(e,{type:"primary"},{default:s(()=>t[0]||(t[0]=[_("Primary Button")])),_:1,__:[0]})}const m=o(c,[["render",f]]);export{m as default};
