@@ -4,44 +4,87 @@ export const naiveThemeOverrides = {
     colorPrimary: '#0038a8',
   },
 }
+const breadcrumbs = [
+  {
+    label: '仪器管理',
+    key: '/instrument',
+  },
+  {
+    label: '自动进样器配置',
+    key: '/instrument/autolabConfig',
+  },
+  {
+    label: '进样器参数盘配置',
+    key: '/instrument/autolabConfig/paramDiskConfig',
+  },
+]
+const menusYuan = [
+  {
+    label: '仪器管理',
+    key: '/instrument',
+    icon: 'user',
+    children: [
+      {
+        label: '自动进样器配置',
+        key: '/instrument/autolabConfig',
+        children: [
+          {
+            label: '进样器参数盘配置',
+            key: '/instrument/autolabConfig/paramDiskConfig',
+            icon: 'file',
+          },
+        ],
+      },
+    ],
+  },
+]
 export const realMenus = [
   {
     label: '首页',
     key: '/home',
+    icon: 'dashboard',
   },
   {
     label: '仪器管理',
     key: '/instrument',
+    icon: 'user',
     children: [
-      { label: '首页', key: '/instrument/index' },
-      { label: '开机自检', key: '/instrument/selfInspection/index' },
-      { label: '仪器配置', key: '/instrument/instrumentConfig/index' },
+      { label: '仪器', key: '/instrument/instrumentHome', icon: 'file' },
+      { label: '开机自检', key: '/instrument/selfInspection', icon: 'file' },
+      { label: '仪器配置', key: '/instrument/instrumentConfig', icon: 'file' },
       {
         label: '自动进样器配置',
-        key: '/instrument/autolabConfig/index',
-        // name: 'injectpanelconfig',
-        children: [{ label: '进样器参数盘配置', key: '/instrument/autolabConfig/paramDiskConfig' }],
+        key: '/instrument/autolabConfig',
+        children: [
+          {
+            label: '进样器参数盘配置',
+            key: '/instrument/autolabConfig/paramDiskConfig',
+            icon: 'file',
+          },
+        ],
       },
       {
         label: '仪器校准',
-        key: '/instrument/instrumentCalibration/index',
+        key: '/instrument/instrumentCalibration',
+        icon: 'file',
       },
       {
         label: '历史检测任务',
-        key: '/instrument/historicalTask/index',
+        key: '/instrument/historicalTask',
+        icon: 'file',
       },
     ],
   },
   {
-    label: '实验管理',
-    key: '/experiment',
+    label: '实验测试',
+    key: '/experiment/experimentTest',
+    icon: 'team',
     children: [
-      { label: '实验测试', key: '/experiment/experimentTest' },
-      { label: '光度测量', key: '/experiment/lumneScence' },
-      { label: '定量测定', key: '/experiment/quantityDetermind' },
-      { label: '光谱扫描', key: '/experiment/spectralScan' },
-      { label: '时间扫描', key: '/experiment/timeScan' },
-      { label: '双分组测量', key: '/experiment/twoComponentMeasure' },
+      { label: '光度测量', key: '/experiment/lumneScence', icon: 'file' },
+      { label: '定量测定', key: '/experiment/quantityDetermind', icon: 'file' },
+      { label: '光谱扫描', key: '/experiment/spectralScan', icon: 'file' },
+      { label: '时间扫描', key: '/experiment/timeScan', icon: 'file' },
+      { label: '双分组测量', key: '/experiment/twoComponentMeasure', icon: 'file' },
     ],
   },
 ]

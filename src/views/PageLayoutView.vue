@@ -15,7 +15,12 @@
       </div>
     </a-layout-header>
     <a-layout>
-      <a-layout-sider v-model:collapsed="collapsed" collapsible style="height: calc(100vh - 64px)">
+      <uvLayoutSideBar
+        @select="onSelect"
+        style="height: calc(100vh - 64px)"
+        :menu-options="menuOptions"
+      />
+      <!-- <a-layout-sider v-model:collapsed="collapsed" collapsible style="height: calc(100vh - 64px)">
         <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline" @select="onSelect">
           <template v-for="item in menuOptions" :key="item.key">
             <a-sub-menu v-if="item.children" :key="item.key">
@@ -39,11 +44,11 @@
             </a-menu-item>
           </template>
         </a-menu>
-      </a-layout-sider>
+      </a-layout-sider> -->
       <a-layout>
         <a-breadcrumb style="margin: 16px 16px; height: 22px">
           <a-breadcrumb-item v-for="item in breadcrumbs" :key="item">
-            {{ item }}
+            <span class="!cursor-pointer" @click="toPage(item)">{{ item.label }}</span>
           </a-breadcrumb-item>
         </a-breadcrumb>
         <a-layout-content
@@ -71,9 +76,10 @@
 </template>
 <script setup lang="ts">
 import { StepBackwardOutlined } from '@ant-design/icons-vue'
-import { computed, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
+import uvLayoutSideBar from '@/components/uvLayoutSideBar/index.vue'
 import { realMenus } from '@/setting'
 import { useLoadingStore } from '@/stores'
 const router = useRouter()
@@ -82,8 +88,19 @@ const loadingStore = useLoadingStore()
 // const permissionStore = usePermissionStore()
 // 侧边栏折叠状态
 const collapsed = ref(false)
-const selectedKeys = ref<string[]>(['1'])
+const selectedKeys = ref(['1'])
 const menuOptions = ref(realMenus)
+type BreadCrumbsType = {
+  label: string
+  key: string
+}
+interface MenuItem {
+  label: string
+  key: string
+  icon?: string
+  children?: MenuItem[]
+}
+const breadcrumbs = ref<BreadCrumbsType[]>([])
 // 菜单数据
 // permissionStore.setPermissionMenus(realMenus)
 // const menuOptions = permissionStore.permissionMenus
@@ -91,21 +108,47 @@ const menuOptions = ref(realMenus)
 // // console.log('accessRoute', accessRoute)
 // router.addRoute(accessRoute)
 // 面包屑 (根据当前路由动态生成)
-watch(route, (newRoute, oldRoute) => {
-  selectedKeys.value = [newRoute.fullPath]
-})
-const breadcrumbs = computed(() => {
-  return route.matched.map((item) => item.meta.title || item.name)
-})
+watch(
+  route,
+  (newRoute, oldRoute) => {
+    selectedKeys.value = [newRoute.fullPath]
+    nextTick(() => {
+      breadcrumbs.value = generateBreadcrumbs(realMenus, newRoute.fullPath)
+    })
+  },
+  { immediate: true },
+)
 
-const onSelect = ({ key }: { key: string }) => {
+const generateBreadcrumbs = (menus: MenuItem[], targetKey: string) => {
+  const breadcrumbsarr: BreadCrumbsType[] = []
+  function findPath(menuItems: MenuItem[], currentPath: BreadCrumbsType[] = []) {
+    for (const item of menuItems) {
+      const newPath = [...currentPath, { label: item.label, key: item.key }]
+
+      if (item.key === targetKey) {
+        breadcrumbsarr.push(...newPath)
+        return true
+      }
+
+      if (item.children) {
+        if (findPath(item.children, newPath)) {
+          return true
+        }
+      }
+    }
+    return false
+  }
+
+  findPath(menus)
+  return breadcrumbsarr
+}
+const toPage = ({ key }: { key: string }) => {
+  router.push({ path: key })
+}
+const onSelect = (key: string) => {
   selectedKeys.value = [key]
   // 这里可以添加路由跳转逻辑
   router.push({ path: key })
 }
 </script>
-<style scoped>
-/* .main {
-  .main-content {}
-} */
-</style>
+<style scoped lang="less"></style>

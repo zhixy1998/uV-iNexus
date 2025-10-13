@@ -1,5 +1,5 @@
 <template>
-  <a-button block @click="buttonClick">
+  <a-button block @click="buttonClick" class="!w-auto !flex-grow-0">
     <template #icon>
       <div class="flex items-center gap-1 px-2 justify-center">
         <slot name="icon"></slot>

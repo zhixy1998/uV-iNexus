@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center justify-between border-b py-3">
-    <div class="text-xl flex">
-      <span>{{ title }}</span>
+  <div class="flex items-center justify-between py-3 headTitle">
+    <div class="text-lg flex">
+      <span class="!font-bold">{{ title }}</span>
       <slot name="leftExtra"></slot>
     </div>
     <div class="mx-auto">
@@ -17,4 +17,8 @@ const props = defineProps({
 })
 </script>
 
-<style scoped></style>
+<style scoped lang="less">
+.headTitle {
+  border-bottom: 1px solid #f0f0f0;
+}
+</style>

@@ -11,18 +11,30 @@ importers:
       '@ant-design/icons-vue':
         specifier: ^7.0.1
         version: 7.0.1(vue@3.5.14(typescript@5.8.3))
+      '@vue-office/docx':
+        specifier: ^1.6.3
+        version: 1.6.3(vue-demi@0.14.6(vue@3.5.14(typescript@5.8.3)))(vue@3.5.14(typescript@5.8.3))
+      '@vue-office/excel':
+        specifier: ^1.7.14
+        version: 1.7.14(vue-demi@0.14.6(vue@3.5.14(typescript@5.8.3)))(vue@3.5.14(typescript@5.8.3))
       ant-design-vue:
         specifier: 4.x
         version: 4.2.6(vue@3.5.14(typescript@5.8.3))
       axios:
         specifier: ^1.9.0
         version: 1.9.0
+      dayjs:
+        specifier: ^1.11.13
+        version: 1.11.13
       echarts:
         specifier: ^5.6.0
         version: 5.6.0
-      mathjax:
-        specifier: '3'
-        version: 3.2.2
+      lodash-es:
+        specifier: ^4.17.21
+        version: 4.17.21
+      mathlive:
+        specifier: ^0.105.3
+        version: 0.105.3
       pinia:
         specifier: ^3.0.1
         version: 3.0.2(typescript@5.8.3)(vue@3.5.14(typescript@5.8.3))
@@ -32,9 +44,9 @@ importers:
       vue:
         specifier: ^3.5.13
         version: 3.5.14(typescript@5.8.3)
-      vue-echarts:
-        specifier: ^7.0.3
-        version: 7.0.3(@vue/runtime-core@3.5.14)(echarts@5.6.0)(vue@3.5.14(typescript@5.8.3))
+      vue-demi:
+        specifier: 0.14.6
+        version: 0.14.6(vue@3.5.14(typescript@5.8.3))
       vue-router:
         specifier: ^4.5.0
         version: 4.5.1(vue@3.5.14(typescript@5.8.3))
@@ -51,9 +63,9 @@ importers:
       '@tsconfig/node22':
         specifier: ^22.0.1
         version: 22.0.2
-      '@types/echarts':
-        specifier: ^5.0.0
-        version: 5.0.0
+      '@types/lodash-es':
+        specifier: ^4.17.12
+        version: 4.17.12
       '@types/node':
         specifier: ^22.14.0
         version: 22.15.21
@@ -346,6 +358,10 @@ packages:
   '@commitlint/types@19.8.1':
     resolution: {integrity: sha512-/yCrWGCoA1SVKOks25EGadP9Pnj0oAIHGpl2wH2M2Y46dPM2ueb8wyCVOD7O3WCTkaJ0IkKvzhl1JY7+uCT2Dw==}
     engines: {node: '>=v18'}
+
+  '@cortex-js/compute-engine@0.28.0':
+    resolution: {integrity: sha512-kGs74P4KVNLSqu+iVhLSAvodScZdVGoZI2kOsUjnBEFCFjlPJ1Nj5TpBz/4nwPT+viguB+g7VseXsmcxWRx23Q==}
+    engines: {node: '>=21.7.3', npm: '>=10.5.0'}
 
   '@csstools/css-parser-algorithms@3.0.5':
     resolution: {integrity: sha512-DaDeUkXZKjdGhgYaHNJTV9pV7Y9B3b644jCLs9Upc3VeNGg6LWARAT6O+Q+/COo+2gg/bM5rhpMAtf70WqfBdQ==}
@@ -850,15 +866,17 @@ packages:
   '@types/conventional-commits-parser@5.0.1':
     resolution: {integrity: sha512-7uz5EHdzz2TqoMfV7ee61Egf5y6NkcO4FB/1iCCQnbeiI1F3xzv3vK5dBCXUCLQgGYS+mUeigK1iKQzvED+QnQ==}
 
-  '@types/echarts@5.0.0':
-    resolution: {integrity: sha512-5uc/16BlYpzH8kU/u8aeRRgY2FV6yRY7RjPnYfUFPowl0F3kvNgfaz09PmeVdLkqdAtMft3XkCfqiJPJjG2DNQ==}
-    deprecated: This is a stub types definition. echarts provides its own type definitions, so you do not need this installed.
-
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
+
+  '@types/lodash-es@4.17.12':
+    resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
+
+  '@types/lodash@4.17.17':
+    resolution: {integrity: sha512-RRVJ+J3J+WmyOTqnz3PiBLA501eKwXl2noseKOrNo/6+XEHjTAxO4xHvxQB6QuNm+s4WRbn6rSiap8+EA+ykFQ==}
 
   '@types/node@22.15.21':
     resolution: {integrity: sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ==}
@@ -925,6 +943,26 @@ packages:
 
   '@volar/typescript@2.4.14':
     resolution: {integrity: sha512-p8Z6f/bZM3/HyCdRNFZOEEzts51uV8WHeN8Tnfnm2EBv6FDB2TQLzfVx7aJvnl8ofKAOnS64B2O8bImBFaauRw==}
+
+  '@vue-office/docx@1.6.3':
+    resolution: {integrity: sha512-Cs+3CAaRBOWOiW4XAhTwwxJ0dy8cPIf6DqfNvYcD3YACiLwO4kuawLF2IAXxyijhbuOeoFsfvoVbOc16A/4bZA==}
+    peerDependencies:
+      '@vue/composition-api': ^1.7.1
+      vue: ^2.0.0 || >=3.0.0
+      vue-demi: ^0.14.6
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+
+  '@vue-office/excel@1.7.14':
+    resolution: {integrity: sha512-pVUgt+emDQUnW7q22CfnQ+jl43mM/7IFwYzOg7lwOwPEbiVB4K4qEQf+y/bc4xGXz75w1/e3Kz3G6wAafmFBFg==}
+    peerDependencies:
+      '@vue/composition-api': ^1.7.1
+      vue: ^2.0.0 || >=3.0.0
+      vue-demi: ^0.14.6
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
 
   '@vue/babel-helper-vue-transform-on@1.4.0':
     resolution: {integrity: sha512-mCokbouEQ/ocRce/FpKCRItGo+013tHg7tixg3DUNS+6bmIchPt66012kBMm476vyEIJPafrvOf4E5OYj3shSw==}
@@ -1178,6 +1216,10 @@ packages:
   compare-func@2.0.0:
     resolution: {integrity: sha512-zHig5N+tPWARooBnb0Zx1MFcdfpyJrfTJ3Y5L+IFvUm8rM74hHz66z0gw0x4tijh5CorKkKUCnW82R2vmpeCRA==}
 
+  complex-esm@2.1.1-esm1:
+    resolution: {integrity: sha512-IShBEWHILB9s7MnfyevqNGxV0A1cfcSnewL/4uPFiSxkcQL4Mm3FxJ0pXMtCXuWLjYz3lRRyk6OfkeDZcjD6nw==}
+    engines: {node: '>=16.14.2', npm: '>=8.5.0'}
+
   compute-scroll-into-view@1.0.20:
     resolution: {integrity: sha512-UCB0ioiyj8CRjtrvaceBLqqhZCVP+1B8+NWQhmdsm0VXOJtobBCf1dBQmebCCo34qZmUwZfIH2MZLqNHazrfjg==}
 
@@ -1265,6 +1307,9 @@ packages:
     peerDependenciesMeta:
       supports-color:
         optional: true
+
+  decimal.js@10.5.0:
+    resolution: {integrity: sha512-8vDa8Qxvr/+d94hSh5P3IJwI5t8/c0KsMp+g8bNw9cY2icONa5aPfvKeieW1WlG0WQYwwhJ7mjui2xtiePQSXw==}
 
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
@@ -1982,8 +2027,8 @@ packages:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
 
-  mathjax@3.2.2:
-    resolution: {integrity: sha512-Bt+SSVU8eBG27zChVewOicYs7Xsdt40qm4+UpHyX7k0/O9NliPc+x77k1/FEsPsjKPZGJvtRZM1vO+geW0OhGw==}
+  mathlive@0.105.3:
+    resolution: {integrity: sha512-eEnJIlRm1ga18ymY79di5Iuc161CzHs3PTXIg8WUHeEt/jpxFHs2CPVYRNxAzOo+5t4S7lA+HDretW4i5dsTmg==}
 
   mathml-tag-names@2.1.3:
     resolution: {integrity: sha512-APMBEanjybaPzUrfqU0IMU5I0AswKMH7k8OTLs0vvV4KZpExkTkY87nR/zpbuTPj+gARop7aGUbl11pnDfW6xg==}
@@ -2611,8 +2656,8 @@ packages:
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
 
-  vue-demi@0.13.11:
-    resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}
+  vue-demi@0.14.6:
+    resolution: {integrity: sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w==}
     engines: {node: '>=12'}
     hasBin: true
     peerDependencies:
@@ -2620,16 +2665,6 @@ packages:
       vue: ^3.0.0-0 || ^2.6.0
     peerDependenciesMeta:
       '@vue/composition-api':
-        optional: true
-
-  vue-echarts@7.0.3:
-    resolution: {integrity: sha512-/jSxNwOsw5+dYAUcwSfkLwKPuzTQ0Cepz1LxCOpj2QcHrrmUa/Ql0eQqMmc1rTPQVrh2JQ29n2dhq75ZcHvRDw==}
-    peerDependencies:
-      '@vue/runtime-core': ^3.0.0
-      echarts: ^5.5.1
-      vue: ^2.7.0 || ^3.1.1
-    peerDependenciesMeta:
-      '@vue/runtime-core':
         optional: true
 
   vue-eslint-parser@10.1.3:
@@ -3052,6 +3087,11 @@ snapshots:
       '@types/conventional-commits-parser': 5.0.1
       chalk: 5.4.1
 
+  '@cortex-js/compute-engine@0.28.0':
+    dependencies:
+      complex-esm: 2.1.1-esm1
+      decimal.js: 10.5.0
+
   '@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4)':
     dependencies:
       '@csstools/css-tokenizer': 3.0.4
@@ -3402,13 +3442,15 @@ snapshots:
     dependencies:
       '@types/node': 22.15.21
 
-  '@types/echarts@5.0.0':
-    dependencies:
-      echarts: 5.6.0
-
   '@types/estree@1.0.7': {}
 
   '@types/json-schema@7.0.15': {}
+
+  '@types/lodash-es@4.17.12':
+    dependencies:
+      '@types/lodash': 4.17.17
+
+  '@types/lodash@4.17.17': {}
 
   '@types/node@22.15.21':
     dependencies:
@@ -3507,6 +3549,16 @@ snapshots:
       '@volar/language-core': 2.4.14
       path-browserify: 1.0.1
       vscode-uri: 3.1.0
+
+  '@vue-office/docx@1.6.3(vue-demi@0.14.6(vue@3.5.14(typescript@5.8.3)))(vue@3.5.14(typescript@5.8.3))':
+    dependencies:
+      vue: 3.5.14(typescript@5.8.3)
+      vue-demi: 0.14.6(vue@3.5.14(typescript@5.8.3))
+
+  '@vue-office/excel@1.7.14(vue-demi@0.14.6(vue@3.5.14(typescript@5.8.3)))(vue@3.5.14(typescript@5.8.3))':
+    dependencies:
+      vue: 3.5.14(typescript@5.8.3)
+      vue-demi: 0.14.6(vue@3.5.14(typescript@5.8.3))
 
   '@vue/babel-helper-vue-transform-on@1.4.0': {}
 
@@ -3836,6 +3888,8 @@ snapshots:
       array-ify: 1.0.0
       dot-prop: 5.3.0
 
+  complex-esm@2.1.1-esm1: {}
+
   compute-scroll-into-view@1.0.20: {}
 
   concat-map@0.0.1: {}
@@ -3909,6 +3963,8 @@ snapshots:
   debug@4.4.1:
     dependencies:
       ms: 2.1.3
+
+  decimal.js@10.5.0: {}
 
   deep-is@0.1.4: {}
 
@@ -4585,7 +4641,9 @@ snapshots:
 
   math-intrinsics@1.1.0: {}
 
-  mathjax@3.2.2: {}
+  mathlive@0.105.3:
+    dependencies:
+      '@cortex-js/compute-engine': 0.28.0
 
   mathml-tag-names@2.1.3: {}
 
@@ -5172,19 +5230,9 @@ snapshots:
 
   vscode-uri@3.1.0: {}
 
-  vue-demi@0.13.11(vue@3.5.14(typescript@5.8.3)):
+  vue-demi@0.14.6(vue@3.5.14(typescript@5.8.3)):
     dependencies:
       vue: 3.5.14(typescript@5.8.3)
-
-  vue-echarts@7.0.3(@vue/runtime-core@3.5.14)(echarts@5.6.0)(vue@3.5.14(typescript@5.8.3)):
-    dependencies:
-      echarts: 5.6.0
-      vue: 3.5.14(typescript@5.8.3)
-      vue-demi: 0.13.11(vue@3.5.14(typescript@5.8.3))
-    optionalDependencies:
-      '@vue/runtime-core': 3.5.14
-    transitivePeerDependencies:
-      - '@vue/composition-api'
 
   vue-eslint-parser@10.1.3(eslint@9.27.0(jiti@2.4.2)):
     dependencies:

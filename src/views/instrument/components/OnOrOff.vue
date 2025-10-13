@@ -1,10 +1,6 @@
 <template>
   <section>
-    <per-see-collapse
-      :parentActiveKey="activeKey"
-      title="仪器开关机"
-      @changeCollapse="changeCollapse"
-    >
+    <uv-collapse :parentActiveKey="activeKey" title="仪器开关机" @changeCollapse="changeCollapse">
       <template #slot-header>
         <a-divider />
         <div class="flex flex-row items-center flex-wrap">
@@ -91,7 +87,7 @@
           </a-row>
         </div>
       </template>
-    </per-see-collapse>
+    </uv-collapse>
   </section>
 </template>
 
@@ -105,7 +101,7 @@ import {
 import { onMounted, type Ref, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-import PerSeeCollapse from '@/components/PerSeeCollapse.vue'
+import uvCollapse from '@/components/uvCollapse/index.vue'
 
 // 折叠面板
 const activeKey = ref<string>('')
@@ -113,7 +109,7 @@ const changeCollapse = (value: string | string[] | number) => {
   activeKey.value = value as string
 }
 // 机器详情
-type TInstrumentDetail = {
+export type TInstrumentDetail = {
   deviceSerialNumber: string
   isDevOpened: string
   isInited: string

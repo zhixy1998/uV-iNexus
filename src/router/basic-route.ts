@@ -22,49 +22,90 @@ export const basicRoutes = [
           title: '首页',
         },
       },
-      // 仪器管理路由组
-      // {
-      //   path: 'instrument',
-      //   meta: {
-      //     title: '仪器管理',
-      //   },
-      //   children: [
-      //     // 开机自检
-      //     {
-      //       path: 'powercheck',
-      //       name: 'powercheck',
-      //       component: () => import('@/views/instrument/Powercheck.vue'),
-      //       meta: {
-      //         title: '开机自检',
-      //       },
-      //     },
-      //     // 自动进样器配置及其子路由
-      //     {
-      //       path: 'autolabconfig',
-      //       name: 'autolabconfig',
-      //       component: () => import('@/views/instrument/Autolabconfig.vue'),
-      //       meta: {
-      //         title: '自动进样器配置',
-      //       },
-      //       children: [
-      //         {
-      //           path: 'injectpanelconfig',
-      //           name: 'injectpanelconfig',
-      //           component: () => import('@/views/instrument/Injectpanelconfig.vue'),
-      //           meta: {
-      //             title: '进样器参数盘配置',
-      //           },
-      //         },
-      //       ],
-      //     },
-      //   ],
-      // },
+      // 仪器管理
+      {
+        path: 'instrument',
+        meta: {
+          title: '仪器管理',
+        },
+        children: [
+          // 开机自检
+          {
+            path: 'instrumentHome',
+            name: 'instrumentHome',
+            component: () => import('@/views/instrument/instrumentHome.vue'),
+            meta: {
+              title: '仪器',
+            },
+          },
+          {
+            path: 'selfInspection',
+            name: 'selfInspection',
+            component: () => import('@/views/instrument/selfInspection/index.vue'),
+            meta: {
+              title: '开机自检',
+            },
+          },
+          {
+            path: 'instrumentConfig',
+            name: 'instrumentConfig',
+            component: () => import('@/views/instrument/instrumentConfig/index.vue'),
+            meta: {
+              title: '仪器配置',
+            },
+          },
+          {
+            path: 'autolabConfig',
+            name: 'autolabConfig',
+            component: () => import('@/views/instrument/autolabConfig/index.vue'),
+            meta: {
+              title: '自动进样器配置',
+            },
+            children: [
+              {
+                path: 'paramDiskConfig',
+                name: 'paramDiskConfig',
+                component: () => import('@/views/instrument/autolabConfig/paramDiskConfig.vue'),
+                meta: {
+                  title: '进样器参数盘配置',
+                },
+              },
+            ],
+          },
+          {
+            path: 'instrumentCalibration',
+            name: 'instrumentCalibration',
+            component: () => import('@/views/instrument/instrumentCalibration/index.vue'),
+            meta: {
+              title: '仪器校准',
+            },
+          },
+          {
+            path: 'historicalTask',
+            name: 'historicalTask',
+            component: () => import('@/views/instrument/historicalTask/index.vue'),
+            meta: {
+              title: '历史检测任务',
+            },
+          },
+          {
+            path: 'usageStatisticsDetail',
+            name: 'usageStatisticsDetail',
+            component: () => import('@/views/instrument/usageStatisticsDetail.vue'),
+            meta: {
+              title: '仪器使用统计',
+              hidden: true,
+            },
+          },
+        ],
+      },
       // 实验测试
       {
         path: 'experiment',
         meta: {
-          title: '实验管理',
+          title: '实验测试',
         },
+        redirect: '/experiment/experimentTest',
         children: [
           // 实验测试
           {
@@ -72,7 +113,7 @@ export const basicRoutes = [
             name: 'experimentTest',
             component: () => import('@/views/experiment/experimentTest/index.vue'),
             meta: {
-              title: '实验测试',
+              title: '首页',
             },
           },
           {
