@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Module name:  ws_ui_inexus
+  ~ Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+  ~ 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+  ~ Description:
+  -->
+
+<Title name="InstrumentFixedProperties">
+  <Type name="T400T500">
+    <Gain>1,2,3,4,5,6,7,8</Gain>
+    <LampPos>0,1</LampPos>
+    <ResponseTime> 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2</ResponseTime>
+    <PhotoMode>0,1,2,3,4</PhotoMode>
+    <ScanSpeed>快速,中速,慢速,最慢速</ScanSpeed>
+    <MinWl>190</MinWl>
+    <MaxWl>1100</MaxWl>
+    <ScanInterval>0.2,0.4,1,2,5</ScanInterval>
+	<DefaultParameters>ResponseTime=1;Wl=660;WlRange=1100,380,1;ScanSpeed=2;PhotoMode=0</DefaultParameters>
+    <AccessoryType>
+      0/固体样品池/1,
+      5/五联长样池/5,
+      8/八联池/8
+    </AccessoryType>
+    <Mode name="U1401">
+      <Caption>T400紫外可见分光光度计</Caption>
+      <Slit1>2.0</Slit1>
+      <InitText>
+		样品池初始化,
+        滤色片电机初始化,
+        波长电机初始化,
+        检查钨灯能量,
+        检查波长,
+		波长校正
+      </InitText>
+      <InitCmdStr>
+		InitSampleCell;
+        InitFilterMotor;
+        InitWlMotor;
+        CheckWLamp;
+        CheckWl;
+		WaveLengthCorrection
+      </InitCmdStr>
+    </Mode>
+    <Mode name="U1501">
+      <Caption>T500紫外可见分光光度计</Caption>
+      <Slit1>2.0</Slit1>
+      <InitText>
+		样品池初始化,
+        滤色片电机初始化,
+        光源电机初始化,
+        波长电机初始化,
+        检查钨灯能量,
+        检查波长,
+        检查氘灯能量,
+		波长校正
+      </InitText>
+      <InitCmdStr>
+	    InitSampleCell;
+        InitFilterMotor;
+        InitLampMotor;
+        InitWlMotor;
+        CheckWLamp;
+        CheckWl;
+        CheckDLamp;
+		WaveLengthCorrection
+      </InitCmdStr>
+    </Mode>
+    <Mode name="1610">
+      <Caption>T6新悦紫外可见分光光度计</Caption>
+      <Slit1>2.0</Slit1>
+      <InitText>
+		样品池初始化,
+        滤色片电机初始化,
+        波长电机初始化,
+        检查钨灯能量,
+        检查波长,
+		波长校正
+      </InitText>
+      <InitCmdStr>
+		InitSampleCell;
+        InitFilterMotor;
+        InitWlMotor;
+        CheckWLamp;
+        CheckWl;
+		WaveLengthCorrection
+      </InitCmdStr>
+    </Mode>
+    <Mode name="1650">
+      <Caption>T6新世纪紫外可见分光光度计</Caption>
+      <Slit1>2.0</Slit1>
+      <InitText>
+		样品池初始化,
+        滤色片电机初始化,
+        光源电机初始化,
+        波长电机初始化,
+        检查钨灯能量,
+        检查波长,
+        检查氘灯能量,
+		波长校正
+      </InitText>
+      <InitCmdStr>
+		InitSampleCell;
+        InitFilterMotor;
+        InitLampMotor;
+        InitWlMotor;
+        CheckWLamp;
+        CheckWl;
+        CheckDLamp;
+		WaveLengthCorrection
+      </InitCmdStr>
+    </Mode>
+  </Type>
+</Title>
+
+
+

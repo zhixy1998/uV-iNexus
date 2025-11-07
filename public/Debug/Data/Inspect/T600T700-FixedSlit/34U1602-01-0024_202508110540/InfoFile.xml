@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<!--
+  ~ Module name:  ws_ui_inexus
+  ~ Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+  ~ 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+  ~ Description:
+  -->
+
+<ArrayOfArrayOfBaseTestItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfBaseTestItem>
+    <BaseTestItem>
+      <ID>波长示值误差与重复性校验;0</ID>
+      <Name>氘灯(656.1)</Name>
+      <RepeatTimes>3</RepeatTimes>
+      <RepeatInterval>1</RepeatInterval>
+      <MethodStr>PhotoMode=2;ScanSpeed=2;WlRange=660,650,0.02;Gain=4;Slit1=2.0;LampPos=1</MethodStr>
+      <MeasurePara>空气:Scan</MeasurePara>
+      <FeaturePoints>
+        <double>656.1</double>
+      </FeaturePoints>
+      <AnalysisIData>
+        <ArrayOfDouble>
+          <double>656.08</double>
+        </ArrayOfDouble>
+        <ArrayOfDouble>
+          <double>656.08</double>
+        </ArrayOfDouble>
+        <ArrayOfDouble>
+          <double>656.08</double>
+        </ArrayOfDouble>
+      </AnalysisIData>
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindPeakAndAverageUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindPeakAndAverageUVTestTool" />
+      <ItemID>1001</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>波长示值误差与重复性校验;1</ID>
+      <Name>氘灯(486.0)</Name>
+      <RepeatTimes>3</RepeatTimes>
+      <RepeatInterval>1</RepeatInterval>
+      <MethodStr>PhotoMode=2;ScanSpeed=2;WlRange=490,480,0.02;Gain=4;Slit1=2.0;LampPos=1</MethodStr>
+      <MeasurePara>空气:Scan</MeasurePara>
+      <FeaturePoints>
+        <double>486</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindPeakAndAverageUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindPeakAndAverageUVTestTool" />
+      <ItemID>1002</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>波长示值误差与重复性校验;2</ID>
+      <Name>镨钕滤光片</Name>
+      <RepeatTimes>3</RepeatTimes>
+      <RepeatInterval>1</RepeatInterval>
+      <MethodStr>PhotoMode=0;ScanSpeed=2;WlRange=810,800,0.1;Slit1=2.0;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:BaseLine|镨钕滤光片:Scan</MeasurePara>
+      <FeaturePoints>
+        <double>807.4</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindPeakAndAverageUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindPeakAndAverageUVTestTool" />
+      <ItemID>1003</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>波长示值误差与重复性校验;3</ID>
+      <Name>钬溶液</Name>
+      <RepeatTimes>3</RepeatTimes>
+      <RepeatInterval>1</RepeatInterval>
+      <MethodStr>PhotoMode=0;ScanSpeed=2;WlRange=645,235,0.1;Slit1=2.0;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:BaseLine|钬溶液:Scan</MeasurePara>
+      <FeaturePoints>
+        <double>640.7</double>
+        <double>536.8</double>
+        <double>416.5</double>
+        <double>361</double>
+        <double>287.4</double>
+        <double>241</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindPeakAndAverageUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindPeakAndAverageUVTestTool" />
+      <ItemID>1004</ItemID>
+    </BaseTestItem>
+  </ArrayOfBaseTestItem>
+  <ArrayOfBaseTestItem>
+    <BaseTestItem>
+      <ID>光谱带宽与仪器最小光谱带宽;0</ID>
+      <Name>氘灯2.0</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=2;ScanSpeed=2;WlRange=660,650,0.1;Gain=4;Slit1=2.0;LampPos=1</MethodStr>
+      <MeasurePara>空气:Scan</MeasurePara>
+      <FeaturePoints>
+        <double>656.1</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindHalfPeakUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindHalfPeakUVTestTool" />
+      <ItemID>6001</ItemID>
+    </BaseTestItem>
+  </ArrayOfBaseTestItem>
+  <ArrayOfBaseTestItem>
+    <BaseTestItem>
+      <ID>基线平直度检验;0</ID>
+      <Name>基线平直度</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=0;ScanSpeed=2;WlRange=1090,200,1;Slit1=2.0;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:BaseLine|空气:Scan</MeasurePara>
+      <FeaturePoints />
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.GetMaxDIstanceUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="GetMaxDIstanceUVTestTool" />
+      <ItemID>4001</ItemID>
+    </BaseTestItem>
+  </ArrayOfBaseTestItem>
+  <ArrayOfBaseTestItem>
+    <BaseTestItem>
+      <ID>基线暗噪声检验;0</ID>
+      <Name>基线暗噪声</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;WlRange=1090,200,1;Slit1=2.0;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:BaseLine|黑挡块:Scan</MeasurePara>
+      <FeaturePoints />
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.GetMaxDIstanceUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="GetMaxDIstanceUVTestTool" />
+      <ItemID>5001</ItemID>
+    </BaseTestItem>
+  </ArrayOfBaseTestItem>
+  <ArrayOfBaseTestItem>
+    <BaseTestItem>
+      <ID>噪声检验;0</ID>
+      <Name>500nm100%噪声</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;ResponseTime=1;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=500|空气:Measure;Wl=500;totalcount=120;timeinterval=1</MeasurePara>
+      <FeaturePoints>
+        <double>500</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindMaxOffsetUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindMaxOffsetUVTestTool" />
+      <ItemID>7001</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>噪声检验;1</ID>
+      <Name>500nm0%噪声</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;ResponseTime=1;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=500|黑挡块:Measure;Wl=500;totalcount=120;timeinterval=1</MeasurePara>
+      <FeaturePoints>
+        <double>500</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindMaxOffsetUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindMaxOffsetUVTestTool" />
+      <ItemID>7002</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>噪声检验;2</ID>
+      <Name>250nm100%噪声</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;ResponseTime=1;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=250|空气:Measure;Wl=250;totalcount=120;timeinterval=1</MeasurePara>
+      <FeaturePoints>
+        <double>250</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindMaxOffsetUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindMaxOffsetUVTestTool" />
+      <ItemID>7003</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>噪声检验;3</ID>
+      <Name>250nm0%噪声</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;ResponseTime=1;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=250|黑挡块:Measure;Wl=250;totalcount=120;timeinterval=1</MeasurePara>
+      <FeaturePoints>
+        <double>250</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindMaxOffsetUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindMaxOffsetUVTestTool" />
+      <ItemID>7004</ItemID>
+    </BaseTestItem>
+  </ArrayOfBaseTestItem>
+  <ArrayOfBaseTestItem>
+    <BaseTestItem>
+      <ID>波长边缘噪声;0</ID>
+      <Name>1090nm100%噪声</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;ResponseTime=1;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=1090|空气:Measure;Wl=1090;totalcount=180;timeinterval=1</MeasurePara>
+      <FeaturePoints>
+        <double>1090</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindMaxOffsetUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindMaxOffsetUVTestTool" />
+      <ItemID>8001</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>波长边缘噪声;1</ID>
+      <Name>1090nm0%噪声</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;ResponseTime=1;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=1090|黑挡块:Measure;Wl=1090;totalcount=180;timeinterval=1</MeasurePara>
+      <FeaturePoints>
+        <double>1090</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindMaxOffsetUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindMaxOffsetUVTestTool" />
+      <ItemID>8002</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>波长边缘噪声;2</ID>
+      <Name>200nm100%噪声</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;ResponseTime=1;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=200|空气:Measure;Wl=200;totalcount=180;timeinterval=1</MeasurePara>
+      <FeaturePoints>
+        <double>200</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindMaxOffsetUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindMaxOffsetUVTestTool" />
+      <ItemID>8003</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>波长边缘噪声;3</ID>
+      <Name>200nm0%噪声</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;ResponseTime=1;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=200|黑挡块:Measure;Wl=200;totalcount=180;timeinterval=1</MeasurePara>
+      <FeaturePoints>
+        <double>200</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindMaxOffsetUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindMaxOffsetUVTestTool" />
+      <ItemID>8004</ItemID>
+    </BaseTestItem>
+  </ArrayOfBaseTestItem>
+  <ArrayOfBaseTestItem>
+    <BaseTestItem>
+      <ID>杂散光校验;0</ID>
+      <Name>220nm杂散光</Name>
+      <RepeatTimes>3</RepeatTimes>
+      <RepeatInterval>1</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;</MethodStr>
+      <MeasurePara>黑挡块:Dark|碘化钠空白溶液:Zero;Wl=220|碘化钠溶液:Measure;Wl=220</MeasurePara>
+      <FeaturePoints>
+        <double>220</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.WlPointsUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="WlPointsUVTestTool" />
+      <ItemID>3001</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>杂散光校验;1</ID>
+      <Name>360nm杂散光</Name>
+      <RepeatTimes>3</RepeatTimes>
+      <RepeatInterval>1</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;</MethodStr>
+      <MeasurePara>黑挡块:Dark|亚硝酸钠空白溶液:Zero;Wl=360|亚硝酸钠溶液:Measure;Wl=360</MeasurePara>
+      <FeaturePoints>
+        <double>360</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.WlPointsUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="WlPointsUVTestTool" />
+      <ItemID>3002</ItemID>
+    </BaseTestItem>
+  </ArrayOfBaseTestItem>
+  <ArrayOfBaseTestItem>
+    <BaseTestItem>
+      <ID>透射比示值误差与重复性校验;0</ID>
+      <Name>紫外分光光度计标准物质GBW(E)130066</Name>
+      <RepeatTimes>3</RepeatTimes>
+      <RepeatInterval>1</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;</MethodStr>
+      <MeasurePara>黑挡块:Dark|紫外分光光度计标准物质空白溶液:Zero;Wl=350,313,257,235|紫外分光光度计标准物质GBW(E)130066:Measure;Wl=350,313,257,235</MeasurePara>
+      <FeaturePoints>
+        <double>350</double>
+        <double>313</double>
+        <double>257</double>
+        <double>235</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.WlPointsAndAverageUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="WlPointsAndAverageUVTestTool" />
+      <ItemID>2001</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>透射比示值误差与重复性校验;1</ID>
+      <Name>10%中性滤光片</Name>
+      <RepeatTimes>3</RepeatTimes>
+      <RepeatInterval>1</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=635,546,440|10%中性滤光片:Measure;Wl=635,546,440</MeasurePara>
+      <FeaturePoints>
+        <double>635</double>
+        <double>546</double>
+        <double>440</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.WlPointsAndAverageUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="WlPointsAndAverageUVTestTool" />
+      <ItemID>2002</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>透射比示值误差与重复性校验;2</ID>
+      <Name>20%中性滤光片</Name>
+      <RepeatTimes>3</RepeatTimes>
+      <RepeatInterval>1</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=635,546,440|20%中性滤光片:Measure;Wl=635,546,440</MeasurePara>
+      <FeaturePoints>
+        <double>635</double>
+        <double>546</double>
+        <double>440</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.WlPointsAndAverageUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="WlPointsAndAverageUVTestTool" />
+      <ItemID>2003</ItemID>
+    </BaseTestItem>
+    <BaseTestItem>
+      <ID>透射比示值误差与重复性校验;3</ID>
+      <Name>30%中性滤光片</Name>
+      <RepeatTimes>3</RepeatTimes>
+      <RepeatInterval>1</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=635,546,440|30%中性滤光片:Measure;Wl=635,546,440</MeasurePara>
+      <FeaturePoints>
+        <double>635</double>
+        <double>546</double>
+        <double>440</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips />
+      <AnalysisMethod>Validation.ViewModel.DataStructure.WlPointsAndAverageUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="WlPointsAndAverageUVTestTool" />
+      <ItemID>2004</ItemID>
+    </BaseTestItem>
+  </ArrayOfBaseTestItem>
+  <ArrayOfBaseTestItem>
+    <BaseTestItem>
+      <ID>漂移检验;0</ID>
+      <Name>漂移检验</Name>
+      <RepeatTimes>1</RepeatTimes>
+      <RepeatInterval>0</RepeatInterval>
+      <MethodStr>PhotoMode=1;ScanSpeed=2;Slit1=2.0;ResponseTime=1;</MethodStr>
+      <MeasurePara>黑挡块:Dark|空气:Zero;Wl=500|空气:Measure;Wl=500;totalcount=3600;timeinterval=1</MeasurePara>
+      <FeaturePoints>
+        <double>500</double>
+      </FeaturePoints>
+      <InstrumentEnergy />
+      <InstrumentResult>
+        <ArrayOfMeasurePoint />
+      </InstrumentResult>
+      <AnalysisIData />
+      <Tips>仪器预热1小时之后进行检验</Tips>
+      <AnalysisMethod>Validation.ViewModel.DataStructure.FindMaxOffsetUVTestTool</AnalysisMethod>
+      <Algorithm xsi:type="FindMaxOffsetUVTestTool" />
+      <ItemID>9001</ItemID>
+    </BaseTestItem>
+  </ArrayOfBaseTestItem>
+</ArrayOfArrayOfBaseTestItem>

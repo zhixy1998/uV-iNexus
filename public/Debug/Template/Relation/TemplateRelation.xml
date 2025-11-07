@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Module name:  ws_ui_inexus
+  ~ Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+  ~ 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+  ~ Description:
+  -->
+
+<ArrayOfTemplateRelation>
+  <TemplateRelation InstrumentStyle="U1601;U1602;U1701;U1702" TemplateName="T600T700-FixedSlit.xlsx" TemplateXML="T600T700-FixedSlit.xml" />
+  <TemplateRelation InstrumentStyle="U1603;U1604;U1703;U1704" TemplateName="T600T700-VariableSlit.xlsx" TemplateXML="T600T700-VariableSlit.xml" />
+  <TemplateRelation InstrumentStyle="1610;U1401" TemplateName="T400.xlsx" TemplateXML="T400.xml" />
+  <TemplateRelation InstrumentStyle="1650;U1501" TemplateName="T500.xlsx" TemplateXML="T500.xml" />
+</ArrayOfTemplateRelation>

@@ -1,0 +1,233 @@
+[2024-12-05 14:22:52,282]
+报错内容:169.254.162.101&101:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---248916921---2024-12-05 14:22:52.146
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:22:52,285]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---248916921---2024-12-05 14:22:52.146
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:36:03,173]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---249707828---2024-12-05 14:36:03.047
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:36:03,176]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---249707828---2024-12-05 14:36:03.046
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:39:29,963]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---249914640---2024-12-05 14:39:29.850
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:39:29,965]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---249914656---2024-12-05 14:39:29.865
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:40:32,131]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---249976796---2024-12-05 14:40:32.020
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:40:32,135]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---249976812---2024-12-05 14:40:32.037
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:46:48,957]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250353625---2024-12-05 14:46:48.846
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:46:51,003]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250355687---2024-12-05 14:46:50.901
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:46:52,605]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250357281---2024-12-05 14:46:52.504
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:46:54,853]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250359515---2024-12-05 14:46:54.736
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:46:57,077]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250361765---2024-12-05 14:46:56.975
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:46:59,300]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250363984---2024-12-05 14:46:59.196
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:01,531]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250366218---2024-12-05 14:47:01.428
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:03,783]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250368453---2024-12-05 14:47:03.668
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:05,997]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250370687---2024-12-05 14:47:05.897
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:07,563]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250372250---2024-12-05 14:47:07.462
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:08,669]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250373343---2024-12-05 14:47:08.555
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:09,764]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250374453---2024-12-05 14:47:09.663
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:10,857]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250375531---2024-12-05 14:47:10.754
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:11,948]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250376625---2024-12-05 14:47:11.846
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:13,043]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250377718---2024-12-05 14:47:12.941
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:14,138]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250378812---2024-12-05 14:47:14.035
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:15,223]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250379906---2024-12-05 14:47:15.123
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:16,342]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250381015---2024-12-05 14:47:16.226
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 14:47:19,706]
+报错内容:169.254.162.101&101:GetCmdErr:SetCellPos  System.OverflowException: 值对于无符号的字节太大或太小。
+   在 System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToByte(String value)
+   在 DriverBase.ProtocolItemCalculator.Tobytes(String inputValue, Int32 Byteslength, String objtype) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItemCalculator.cs:行号 51
+   在 DriverBase.ProtocolItem.CalcSendBytes(Object[] para) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\NewProtocl\ProtocolItem.cs:行号 201
+   在 UVDriverBase.UVBaseProtocol.GetSendCmd(String TypeID, Object[] para, Int32& TimeOut, Boolean& NeedResponse) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\UVDriverBase\UVBaseProtocol.cs:行号 105
+   在 DriverBase.BaseProxy.ExecuteCmd(String type, Int32& timeout, Boolean& m_needResponse, Object[] para, Boolean isVirtual) 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\PipeProxy\BaseProxy.cs:行号 134---250382390---2024-12-05 14:47:17.608
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 16:34:55,794]
+报错内容:169.254.162.101&101:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---256840437---2024-12-05 16:34:55.654
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-05 16:34:55,796]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---256840468---2024-12-05 16:34:55.691
+System.Exception: 引发类型为“System.Exception”的异常。

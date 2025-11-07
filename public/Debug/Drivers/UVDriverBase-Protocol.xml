@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Module name:  ws_ui_inexus
+  ~ Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+  ~ 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+  ~ Description:
+  -->
+
+<ArrayOfCommandClass>
+  <CommandClass ID="SetDiWorkTime" Name="设置氘灯工作时间">
+    <Command>10, 44, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>10,44,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+  <!--关0开1-->
+  <CommandClass ID="SetWLampStatus" Name="设置钨灯状态">
+    <Command>2, 8, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>2,8,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+  <!--关0开1-->
+  <CommandClass ID="SetDLampStatus" Name="设置氘灯状态">
+    <Command>2, 7, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>2,7,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+  <!--钨灯0氘灯1-->
+  <CommandClass ID="SetLampPos" Name="">
+    <Command>6, 4, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>6, 4, 0, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>10000</TimeOut>
+  </CommandClass>
+  <CommandClass ID="SetWiWorkTime" Name="设置钨灯工作时间">
+    <Command>10, 42, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>10, 42, 0, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+   <CommandClass ID="SetChangeLampWl" Name="设置换灯波长">
+    <Command>10, 5, {0}, {1}, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>10, 5, 0, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+   <CommandClass ID="SetWLList" Name="设置波长校正列表">
+    <Command>20, 10, {0}, {1}, {2}, {3}, {4}, {5}, {6}</Command>
+    <ReturnCommand>20,10,20,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+     <CommandClass ID="SetScanWlInterval" Name="设置扫描采样间隔">
+    <Command>6, 6, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>6,6,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+      <CommandClass ID="SetScanSpeed" Name="设置扫描速度">
+    <Command>6, 12, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>6,12,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+  <CommandClass ID="SetWl" Name="设置当前波长">
+    <Command>10, 1, {0},{1}, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>10,1,{0},{1},0,0,0,0,0</ReturnCommand>
+    <TimeOut>8000</TimeOut>
+  </CommandClass>
+   <CommandClass ID="SetStartWl" Name="设置扫描开始波长">
+    <Command>10, 2, {0}, {1}, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>10,2,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+    <CommandClass ID="SetEndWl" Name="设置扫描结束波长">
+    <Command>10, 3, {0}, {1}, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>10,3,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+    <CommandClass ID="SetGain" Name="设置增益">
+    <Command>6, 7,{0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>6,7,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>6000</TimeOut>
+  </CommandClass>
+  <CommandClass ID="SetResponseTime" Name="设置响应时间">
+    <Command>6, 11, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>6,11,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+    <CommandClass ID="SetPhotoMode" Name="设置测光模式">
+    <Command>6, 5, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>6,5,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+  <CommandClass ID="SetSlit1" Name="设置狭缝1的宽度">
+    <Command>6, 2, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>6,2,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>10000</TimeOut>
+  </CommandClass>
+  <CommandClass ID="GetCellPos" Name="读取样品池位置">
+    <Command>5, 3, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>5,3,{0},0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>60000</TimeOut>
+  </CommandClass>
+   <CommandClass ID="SetCellPos" Name="设置样品池位置">
+    <Command>6, 3, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>6,3,{0},0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>60000</TimeOut>
+  </CommandClass>
+  <CommandClass ID="SetWorkTime" Name="设置仪器累计工作时间">
+    <Command>10, 40, {0}, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>10,40,0,0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+    <CommandClass ID="GetAccessoryType" Name="读样品池类型">
+    <Command>5, 18, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>5,18,{0},0,0,0,0,0,0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+    <CommandClass ID="GetChangeLampWl" Name="读灯">
+    <Command>9, 5, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>9, 5, {0}, {1}, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+    <CommandClass ID="GetSn" Name="读序列号">
+    <Command>19, 255, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>19, 255, {0}, {1}, {2}, {3}, {4},{5}, 0</ReturnCommand>
+    <TimeOut>3000</TimeOut>
+  </CommandClass>
+    <CommandClass ID="InitLamp" Name="灯电机初始化">
+    <Command>0, 6, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>0, 6, {0}, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>60000</TimeOut>
+  </CommandClass>
+  <CommandClass ID="CheckWLamp" Name="检查钨灯能量">
+    <Command>0, 11, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>0, 11,{0}, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>18000</TimeOut>
+  </CommandClass>
+  <CommandClass ID="CheckDLamp" Name="检查氘灯能量">
+    <Command>0, 12, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>0, 12, {0}, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>18000</TimeOut>
+  </CommandClass>
+   <CommandClass ID="InitFilter" Name="滤色片初始化">
+    <Command>0, 3, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>0, 3,{0}, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>60000</TimeOut>
+  </CommandClass>
+   <CommandClass ID="InitWl" Name="波长初始化">
+    <Command>0, 5, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>0, 5, {0}, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>30000</TimeOut>
+  </CommandClass>
+   <CommandClass ID="CheckWl" Name="检查波长">
+    <Command>0, 15, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>0, 15,{0}, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>18000</TimeOut>
+  </CommandClass>
+  <CommandClass ID="InitSampleCell" Name="样品池初始化">
+    <Command>0, 13, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>0, 13, {0}, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>30000</TimeOut>
+  </CommandClass>
+  <CommandClass ID="Dark" Name="暗电流校正">
+    <Command>0, 14, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>0, 14, 0, 0, 0, 0, 0, 0, 0</ReturnCommand>
+    <TimeOut>30000</TimeOut>
+  </CommandClass>
+   <CommandClass ID="Measure" Name="读取测量值">
+    <Command>19, 7, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>19,7,0,{0},{1},0,{2},{3},{4}|19,8,{0},{1},{2},0,{3},{4},{5}</ReturnCommand>
+    <TimeOut>30000</TimeOut>
+  </CommandClass>
+    <CommandClass ID="BaseLine" Name="基线">
+    <Command>19, 5, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>19,5,0,{0},{1},0,{2},{3},{4}|19,6,{0},{1},{2},0,{3},{4},{5}</ReturnCommand>
+    <TimeOut>30000</TimeOut>
+  </CommandClass>
+   <CommandClass ID="Scan" Name="扫描">
+    <Command>19, 1, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>19,1,0,{0},{1},0,{2},{3},{4}|19,2,{0},{1},{2},0,{3},{4},{5}</ReturnCommand>
+    <TimeOut>30000</TimeOut>
+  </CommandClass>
+   <CommandClass ID="Zero" Name="较零">
+    <Command>19, 3, 0, 0, 0, 0, 0, 0, 0</Command>
+    <ReturnCommand>19,3,0,{0},{1},0,{2},{3},{4}|19,4,{0},{1},{2},0,{3},{4},{5}</ReturnCommand>
+    <TimeOut>30000</TimeOut>
+  </CommandClass>
+</ArrayOfCommandClass>
+		
+
+

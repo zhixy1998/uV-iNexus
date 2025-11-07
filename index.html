@@ -1,13 +1,47 @@
-<!DOCTYPE html>
+<!--
+  ~ Module name:  ws_ui_inexus
+  ~ Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+  ~ 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+  ~ Description:
+  -->
+
+<!doctype html>
 <html lang="">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>UV iNexus</title>
   </head>
   <body>
     <div id="app"></div>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ['$', '$'],
+            ['\\(', '\\)'],
+          ],
+          displayMath: [
+            // start/end delimiter pairs for display math
+            ['$$', '$$'],
+            ['\\[', '\\]'],
+          ],
+        },
+      }
+    </script>
+    <!-- <script src="/mathjax/tex-mml-chtml.js"></script> -->
+    <!-- <script>
+      var MQ = MathQuill.getInterface(2)
+      console.log(MQ,'MQ')
+    </script> -->
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
     <script type="module" src="/src/main.ts"></script>
+    <!-- <script defer src="https://unpkg.com/mathlive"></script> -->
   </body>
 </html>

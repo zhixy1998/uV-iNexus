@@ -1,0 +1,6 @@
+[2024-11-29 10:52:41,910]
+报错内容:ReadData异常信息:
+System.Exception: Index中路径有误，请查看
+   在 GeneralDataManager.DataManager.GetDataPath(String dataPath, String dataName)
+   在 GeneralDataManager.DataManager.GetObject[T](String zipPath, String dataName)
+   在 Validation.DataManagement.DataClass.ReadData[T](String dataPath) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\DataManagement\DataClass.cs:行号 82

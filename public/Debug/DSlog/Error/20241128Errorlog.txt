@@ -1,0 +1,506 @@
+[2024-11-28 09:23:13,427]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---76342421---2024-11-28 09:23:13.313
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 09:23:13,430]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---76342421---2024-11-28 09:23:13.312
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 09:37:10,595]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 09:37:10,595]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 09:37:29,354]
+报错内容:仪器30U1604-01-0010:GetPhotoData异常
+System.ArgumentException: Width 必须大于 0px。
+   在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   在 System.Windows.Forms.Control.Invoke(Delegate method)
+   在 Validation.View.ViewUC.ucGraphList.UpdateCurve(Boolean isClear, Int32 time, Double x, Double y) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\View\ViewUC\ucGraphList.cs:行号 61
+   在 Validation.ViewModel.CommonClass.BaseClass.BaseTestItem.GetPhotoData(Object[] CalcedData, String readCmdType) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\ViewModel\CommonClass\BaseTestItem.cs:行号 395
+[2024-11-28 09:37:51,927]
+报错内容:169.254.162.254&254:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---77220921---2024-11-28 09:37:51.820
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 09:37:51,927]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---77220921---2024-11-28 09:37:51.820
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:41:21,199]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---81030187---2024-11-28 10:41:21.084
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:41:21,202]
+报错内容:169.254.162.254&254:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---81030187---2024-11-28 10:41:21.079
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:43:44,317]
+报错内容:169.254.162.254&254:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---81173265---2024-11-28 10:43:44.163
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:43:44,320]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---81173265---2024-11-28 10:43:44.163
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:44:17,100]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---81206093---2024-11-28 10:44:16.987
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:44:17,100]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---81206125---2024-11-28 10:44:17.011
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:52:11,650]
+报错内容:169.254.162.254&254:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---81680609---2024-11-28 10:52:11.494
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:52:11,653]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---81680609---2024-11-28 10:52:11.494
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:53:49,567]
+报错内容:169.254.162.254&254:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---81778531---2024-11-28 10:53:49.429
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:53:49,570]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---81778531---2024-11-28 10:53:49.429
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:57:15,396]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 82---81984406---2024-11-28 10:57:15.293
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 10:57:15,398]
+报错内容:169.254.162.254&254:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---81984406---2024-11-28 10:57:15.295
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 11:00:30,224]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---82179203---2024-11-28 11:00:30.101
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 11:00:30,227]
+报错内容:169.254.162.254&254:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---82179218---2024-11-28 11:00:30.102
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 11:01:58,359]
+报错内容:169.254.162.254&254:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---82267312---2024-11-28 11:01:58.206
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 11:01:58,359]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---82267312---2024-11-28 11:01:58.207
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 11:17:03,526]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---83172484---2024-11-28 11:17:03.374
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 11:17:03,529]
+报错内容:169.254.162.254&254:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---83172484---2024-11-28 11:17:03.375
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:24:00,451]
+报错内容:169.254.162.254&254:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---90789437---2024-11-28 13:24:00.327
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:24:00,453]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---90789437---2024-11-28 13:24:00.327
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:26:13,762]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---90922750---2024-11-28 13:26:13.640
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:26:13,764]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---90922703---2024-11-28 13:26:13.590
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:36:27,232]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:36:27,235]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:36:44,880]
+报错内容:仪器30U1604-01-0010:GetPhotoData异常
+System.ArgumentException: Width 必须大于 0px。
+   在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   在 System.Windows.Forms.Control.Invoke(Delegate method)
+   在 Validation.View.ViewUC.ucGraphList.UpdateCurve(Boolean isClear, Int32 time, Double x, Double y) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\View\ViewUC\ucGraphList.cs:行号 61
+   在 Validation.ViewModel.CommonClass.BaseClass.BaseTestItem.GetPhotoData(Object[] CalcedData, String readCmdType) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\ViewModel\CommonClass\BaseTestItem.cs:行号 395
+[2024-11-28 13:37:05,093]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:37:05,093]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:37:43,334]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:37:43,334]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:38:31,457]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:38:31,457]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:39:09,672]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:39:09,673]
+报错内容:SetData:System.InvalidOperationException: 线程间操作无效: 从不是创建控件“”的线程访问它。
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.SetBoundsCore(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height)
+   在 FarPoint.Win.Spread.SpreadView.i(Boolean A_0, Boolean A_1)
+   在 FarPoint.Win.Spread.SpreadView.c(Object A_0, SheetViewEventArgs A_1)
+   在 FarPoint.Win.Spread.SheetView.b(Int32 A_0, Int32 A_1, Int32 A_2, Int32 A_3)
+   在 FarPoint.Win.Spread.SheetView.OnCellChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount)
+   在 FarPoint.Win.Spread.SheetView.OnDataModelChanged(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.SheetDataModelEventHandler.Invoke(Object sender, SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.BaseSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.OnChanged(SheetDataModelEventArgs e)
+   在 FarPoint.Win.Spread.Model.DefaultSheetDataModel.FireChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.FarPoint.Win.Spread.Model.INoitifyModelChanged.NoitifyModelChanged(Int32 row, Int32 column, Int32 rowCount, Int32 columnCount, SheetDataModelEventType type)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(ISheetDataModel A_0, CellRange A_1)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.a(n1 A_0, Int32 A_1, Int32 A_2, Int32 A_3, Int32 A_4, Boolean A_5)
+   在 FarPoint.Win.Spread.SpreadWinUIManager.OnDataChanged(IWorksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.UI.UIManager.DataChangedInternal(Worksheet worksheet, Int32 row, Int32 column)
+   在 GrapeCity.Spreadsheet.Worksheet.a(Int32 A_0, Int32 A_1, Boolean A_2)
+   在 GrapeCity.Spreadsheet.Worksheet.SetValue(Int32 row, Int32 column, Object value, Boolean notify)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value, Boolean ignoreCellFormula)
+   在 FarPoint.Win.Spread.Model.WorksheetDataModel.SetValue(Int32 row, Int32 column, Object value)
+   在 FarPoint.Win.Spread.Cell.set_Text(String value)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\DSCode\PCTY\紫外\驱动\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 186
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:47:38,278]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---92206046---2024-11-28 13:47:36.938
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-11-28 13:47:38,279]
+报错内容:169.254.162.254&254:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---92206250---2024-11-28 13:47:37.142
+System.Exception: 引发类型为“System.Exception”的异常。

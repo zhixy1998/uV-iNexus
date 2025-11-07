@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+  ~ Module name:  ws_ui_inexus
+  ~ Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+  ~ 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+  ~ Description:
+  -->
+
+<ArrayOfIndex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Index>
+    <ID>-1</ID>
+    <FilePath>E:\newest\validation\ValidationWin\bin\Debug\Data\Inspect\T600T700-FixedSlit\34U1602-01-0024_202508110540.rar</FilePath>
+    <FileName>34U1602-01-0024_202508110540.rar</FileName>
+    <Comment />
+    <CreatTime xsi:nil="true" />
+    <UpdateTime xsi:nil="true" />
+  </Index>
+</ArrayOfIndex>

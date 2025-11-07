@@ -1,0 +1,693 @@
+[2025-08-08 09:52:50,032]
+报错内容:仪器33-1610-01-0238仪器添加失败!
+System.ApplicationException: 打开文件错误 ---> System.ApplicationException: 错误验证文件 ---> System.NotSupportedException: 不支持给定路径的格式。
+   在 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 c9.a(String A_0)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 c9.a(String A_0)
+   在 c9.a(String A_0, Stream A_1, Int32 A_2, String A_3, Int32 A_4, String A_5, ExcelOpenFlags A_6, ExcelWarningList A_7, String A_8, Boolean A_9)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 c9.a(String A_0, Stream A_1, Int32 A_2, String A_3, Int32 A_4, String A_5, ExcelOpenFlags A_6, ExcelWarningList A_7, String A_8, Boolean A_9)
+   在 FarPoint.Win.Spread.FpSpread.a(String A_0, Int32 A_1, String A_2, Int32 A_3, String A_4, ExcelOpenFlags A_5, ExcelWarningList A_6, String A_7, ExcelFileHandler A_8, Boolean A_9)
+   在 FarPoint.Win.Spread.FpSpread.OpenExcel(String fileName, String password)
+   在 FarPoint.Win.Spread.FpSpread.OpenExcel(String fileName)
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 95
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadTemplate(String ReportExcelName, Dictionary`2& Sampleinfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 221
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 150
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 114
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 09:54:45,384]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 183
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 09:54:45,384]
+报错内容:仪器33-1610-01-0249仪器添加失败!
+System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetData(String sheetName, Int32 row, Int32 col) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 162
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 119
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 163
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 114
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 09:54:45,384]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 183
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 10:17:39,006]
+报错内容:仪器33-1610-01-0250仪器添加失败!
+System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetData(String sheetName, Int32 row, Int32 col) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 162
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 119
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 163
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 114
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 10:17:39,023]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 183
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 10:17:39,024]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 183
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 10:19:49,294]
+报错内容:255.255.255.255&180:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---4776328---2025-08-08 10:19:49.184
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 10:19:51,569]
+报错内容:255.255.255.255&180:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---4778593---2025-08-08 10:19:51.453
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 10:19:53,522]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.NotSupportedException: 不支持给定路径的格式。
+   在 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   在 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.Init(String templateName, String processName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 139
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String TemplateFileName, String PrccessName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 49
+[2025-08-08 10:27:17,936]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.NotSupportedException: 不支持给定路径的格式。
+   在 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   在 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.Init(String templateName, String processName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 139
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String TemplateFileName, String PrccessName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 49
+[2025-08-08 10:27:21,623]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---5225265---2025-08-08 10:27:18.130
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 10:27:23,711]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---5228765---2025-08-08 10:27:21.633
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 10:30:27,616]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.NotSupportedException: 不支持给定路径的格式。
+   在 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   在 System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.Init(String templateName, String processName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 139
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String TemplateFileName, String PrccessName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 49
+[2025-08-08 10:30:29,378]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---5414953---2025-08-08 10:30:27.815
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 10:30:30,971]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---5414968---2025-08-08 10:30:27.831
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 11:10:12,117]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.ApplicationException: 打开文件错误 ---> System.ApplicationException: 错误验证文件 ---> System.NotSupportedException: 不支持给定路径的格式。
+   在 System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 c9.a(String A_0)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 c9.a(String A_0)
+   在 c9.a(String A_0, Stream A_1, Int32 A_2, String A_3, Int32 A_4, String A_5, ExcelOpenFlags A_6, ExcelWarningList A_7, String A_8, Boolean A_9)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 c9.a(String A_0, Stream A_1, Int32 A_2, String A_3, Int32 A_4, String A_5, ExcelOpenFlags A_6, ExcelWarningList A_7, String A_8, Boolean A_9)
+   在 FarPoint.Win.Spread.FpSpread.a(String A_0, Int32 A_1, String A_2, Int32 A_3, String A_4, ExcelOpenFlags A_5, ExcelWarningList A_6, String A_7, ExcelFileHandler A_8, Boolean A_9)
+   在 FarPoint.Win.Spread.FpSpread.OpenExcel(String fileName, String password)
+   在 FarPoint.Win.Spread.FpSpread.OpenExcel(String fileName)
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 95
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadTemplate(String ReportExcelName, Dictionary`2& Sampleinfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 222
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 151
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 114
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 11:35:44,784]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.IO.DirectoryNotFoundException: 未能找到路径“E:\检验软件\newest\validation\ValidationWin\bin\Debug\Template\Inspect\”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 103
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadTemplate(String ReportExcelName, Dictionary`2& Sampleinfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 221
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 150
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.Init(String templateName, String processName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 143
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String TemplateFileName, String PrccessName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 49
+[2025-08-08 11:36:26,584]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.IO.DirectoryNotFoundException: 未能找到路径“E:\检验软件\newest\validation\ValidationWin\bin\Debug\Template\Inspect\”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 103
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadTemplate(String ReportExcelName, Dictionary`2& Sampleinfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 221
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 150
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.Init(String templateName, String processName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 143
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String TemplateFileName, String PrccessName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 49
+[2025-08-08 14:35:57,909]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:35:57,909]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:35:57,909]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetData(String sheetName, Int32 row, Int32 col) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 164
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 121
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 163
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 114
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 14:36:02,125]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---20145250---2025-08-08 14:35:58.116
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:36:03,225]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---20145281---2025-08-08 14:35:58.137
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:36:58,987]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:36:58,987]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:36:58,987]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetData(String sheetName, Int32 row, Int32 col) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 164
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 121
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 163
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 114
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 14:37:02,397]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---20208359---2025-08-08 14:37:01.227
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:37:02,397]
+报错内容:169.254.12.6&6:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---20208375---2025-08-08 14:37:01.234
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:37:26,523]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:37:26,913]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:37:29,852]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetData(String sheetName, Int32 row, Int32 col) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 164
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 121
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 163
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 114
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 14:37:31,847]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---20237250---2025-08-08 14:37:30.105
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:37:35,042]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---20238875---2025-08-08 14:37:31.737
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:38:19,272]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:38:19,272]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:38:34,008]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetData(String sheetName, Int32 row, Int32 col) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 164
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 121
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 163
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 114
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 14:38:35,456]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---20302484---2025-08-08 14:38:35.342
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:38:35,472]
+报错内容:169.254.12.6&6:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---20302515---2025-08-08 14:38:35.378
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:39:57,772]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:39:57,805]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:40:04,548]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetData(String sheetName, Int32 row, Int32 col) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 164
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 121
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 163
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 114
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 14:40:07,537]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---20391859---2025-08-08 14:40:04.724
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:40:09,618]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---20394671---2025-08-08 14:40:07.537
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:47:54,369]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:47:54,369]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetData(String sheetName, Int32 row, Int32 col) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 164
+   在 Validation.Excel.CommClass.ExcelOperation.Open(String ExcelName, Dictionary`2 testItems, String tempfile, Boolean isCopyTemp) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 121
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 163
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 114
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 14:47:54,369]
+报错内容:SetData:System.Exception: 工作表名称Report不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.SetData(String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 185
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:47:55,898]
+报错内容:169.254.12.6&6:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---20862046---2025-08-08 14:47:54.908
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 14:47:56,020]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---20862046---2025-08-08 14:47:54.908
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 15:41:22,086]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---24069109---2025-08-08 15:41:21.964
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 15:41:22,093]
+报错内容:169.254.12.6&6:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---24069109---2025-08-08 15:41:21.966
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 16:21:06,554]
+报错内容:UpdateResult异常信息:
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.SetDataInProjects(String serialNo, String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 213
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.UpdateResult(ITestItem item, String info, String serial, Int32 times, Int32 drift) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 456
+[2025-08-08 16:22:06,554]
+报错内容:UpdateResult异常信息:
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.SetDataInProjects(String serialNo, String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 213
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.UpdateResult(ITestItem item, String info, String serial, Int32 times, Int32 drift) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 456
+[2025-08-08 16:22:54,107]
+报错内容:UpdateResult异常信息:
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.SetDataInProjects(String serialNo, String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 213
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.UpdateResult(ITestItem item, String info, String serial, Int32 times, Int32 drift) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 456
+[2025-08-08 16:22:57,540]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---26564546---2025-08-08 16:22:57.409
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 16:22:57,540]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---26564562---2025-08-08 16:22:57.429
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 16:27:54,357]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---26861375---2025-08-08 16:27:54.233
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 16:27:54,365]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---26861390---2025-08-08 16:27:54.248
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 16:31:32,655]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---27079671---2025-08-08 16:31:32.541
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 16:31:32,655]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---27079718---2025-08-08 16:31:32.584
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 16:37:45,310]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---27452328---2025-08-08 16:37:45.197
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 16:37:45,310]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---27452328---2025-08-08 16:37:45.197
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 16:41:00,683]
+报错内容:169.254.12.6&6:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---27647703---2025-08-08 16:41:00.566
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:08:08,007]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---29275031---2025-08-08 17:08:07.895
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:08:08,007]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---29275031---2025-08-08 17:08:07.895
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:17:44,837]
+报错内容:169.254.12.6&6:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---29851859---2025-08-08 17:17:44.714
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:17:44,837]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---29851859---2025-08-08 17:17:44.714
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:19:31,205]
+报错内容:169.254.12.6&6:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---29958218---2025-08-08 17:19:31.084
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:52:05,261]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称检测项信息不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetNonEmptyRowCount(String sheetName) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 329
+   在 Validation.ViewModel.CommonClass.BaseClass.TemplateOperation.GetTestItemInfo(ExcelOperation iExcel, String filename, Dictionary`2& sampleInfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\TemplateOperation.cs:行号 59
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 156
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 116
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 17:52:10,117]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---31912578---2025-08-08 17:52:05.437
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:52:10,119]
+报错内容:169.254.12.6&6:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---31912593---2025-08-08 17:52:05.452
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:53:51,352]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称检测项信息不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetNonEmptyRowCount(String sheetName) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 329
+   在 Validation.ViewModel.CommonClass.BaseClass.TemplateOperation.GetTestItemInfo(ExcelOperation iExcel, String filename, Dictionary`2& sampleInfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\TemplateOperation.cs:行号 59
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 156
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 116
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 17:53:53,560]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---32018687---2025-08-08 17:53:51.554
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:53:53,577]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---32018703---2025-08-08 17:53:51.567
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:55:29,970]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称检测项信息不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetNonEmptyRowCount(String sheetName) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 329
+   在 Validation.ViewModel.CommonClass.BaseClass.TemplateOperation.GetTestItemInfo(ExcelOperation iExcel, String filename, Dictionary`2& sampleInfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\TemplateOperation.cs:行号 59
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 156
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 116
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 17:55:34,594]
+报错内容:169.254.12.6&6:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---32118984---2025-08-08 17:55:31.845
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:55:34,594]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---32118984---2025-08-08 17:55:31.845
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:59:10,982]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称检测项信息不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetNonEmptyRowCount(String sheetName) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 329
+   在 Validation.ViewModel.CommonClass.BaseClass.TemplateOperation.GetTestItemInfo(ExcelOperation iExcel, String filename, Dictionary`2& sampleInfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\TemplateOperation.cs:行号 59
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 156
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 116
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 17:59:17,064]
+报错内容:169.254.12.6&6:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---32342218---2025-08-08 17:59:15.074
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 17:59:17,084]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---32342187---2025-08-08 17:59:15.054
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:00:13,772]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称检测项信息不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetNonEmptyRowCount(String sheetName) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 329
+   在 Validation.ViewModel.CommonClass.BaseClass.TemplateOperation.GetTestItemInfo(ExcelOperation iExcel, String filename, Dictionary`2& sampleInfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\TemplateOperation.cs:行号 59
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 156
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 116
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 18:00:15,056]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---32401109---2025-08-08 18:00:13.966
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:00:17,112]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---32404140---2025-08-08 18:00:16.997
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:00:53,321]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称检测项信息不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetNonEmptyRowCount(String sheetName) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 329
+   在 Validation.ViewModel.CommonClass.BaseClass.TemplateOperation.GetTestItemInfo(ExcelOperation iExcel, String filename, Dictionary`2& sampleInfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\TemplateOperation.cs:行号 59
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 156
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 116
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 18:00:59,113]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---32444375---2025-08-08 18:00:57.237
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:00:59,113]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---32444375---2025-08-08 18:00:57.232
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:03:37,649]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称检测项信息不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetNonEmptyRowCount(String sheetName) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 329
+   在 Validation.ViewModel.CommonClass.BaseClass.TemplateOperation.GetTestItemInfo(ExcelOperation iExcel, String filename, Dictionary`2& sampleInfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\TemplateOperation.cs:行号 59
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 156
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 116
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 18:03:40,760]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---32604984---2025-08-08 18:03:37.854
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:03:40,871]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---32604984---2025-08-08 18:03:37.854
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:06:14,544]
+报错内容:仪器34U1602-01-0024仪器添加失败!
+System.Exception: 工作表名称检测项信息不存在于表的集合中。
+   在 FarPoint.Win.Spread.SheetViewCollection.get_Item(String index)
+   在 Validation.Excel.CommClass.ExcelOperation.GetNonEmptyRowCount(String sheetName) 位置 E:\检验软件\newest\validation\ValidationWin\Excel\CommClass\ExcelOperation.cs:行号 329
+   在 Validation.ViewModel.CommonClass.BaseClass.TemplateOperation.GetTestItemInfo(ExcelOperation iExcel, String filename, Dictionary`2& sampleInfo) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\TemplateOperation.cs:行号 59
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.LoadData() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 156
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.GetInfoFromReportFile() 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 116
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.set_ReportFileName(String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 72
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.AddProcess(BaseDevice instrument, String insSn, String ReportFileName) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 81
+[2025-08-08 18:06:15,899]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---32761890---2025-08-08 18:06:14.746
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:06:15,899]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---32761906---2025-08-08 18:06:14.761
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:11:45,742]
+报错内容:UpdateResult异常信息:
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.SetDataInProjects(String serialNo, String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 213
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.UpdateResult(ITestItem item, String info, String serial, Int32 times, Int32 drift) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 458
+[2025-08-08 18:12:25,568]
+报错内容:UpdateResult异常信息:
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.SetDataInProjects(String serialNo, String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 213
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.UpdateResult(ITestItem item, String info, String serial, Int32 times, Int32 drift) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 458
+[2025-08-08 18:13:04,631]
+报错内容:UpdateResult异常信息:
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Validation.ViewModel.CommonClass.BaseClass.ValidationSolution.SetDataInProjects(String serialNo, String sheetName, Int32 row, Int32 col, String value) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\ValidationSolution.cs:行号 213
+   在 Validation.ViewModel.CommonClass.BaseClass.InstrumentProcess.UpdateResult(ITestItem item, String info, String serial, Int32 times, Int32 drift) 位置 E:\检验软件\newest\validation\ValidationWin\ViewModel\CommonClass\InstrumentProject.cs:行号 458
+[2025-08-08 18:13:07,931]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---33174953---2025-08-08 18:13:07.822
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:13:07,931]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---33174953---2025-08-08 18:13:07.822
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:20:52,647]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---33639671---2025-08-08 18:20:52.530
+System.Exception: 引发类型为“System.Exception”的异常。
+[2025-08-08 18:20:52,647]
+报错内容:169.254.12.6&6:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---33639703---2025-08-08 18:20:52.559
+System.Exception: 引发类型为“System.Exception”的异常。

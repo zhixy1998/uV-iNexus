@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Module name:  ws_ui_inexus
+  ~ Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+  ~ 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+  ~ Description:
+  -->
+
+<ArrayOfTemplateLocation>
+  <TemplateLocation SheetName="检测项信息">
+    <BindingLocation>
+      <Name>项目名称</Name>
+      <Field>Name</Field>
+      <RowIndex>0</RowIndex>
+      <ColumnIndex>1</ColumnIndex>
+    </BindingLocation>
+    <BindingLocation>
+      <Name>提示</Name>
+      <Field>Tips</Field>
+      <RowIndex>0</RowIndex>
+      <ColumnIndex>2</ColumnIndex>
+    </BindingLocation>	
+	<BindingLocation>
+      <Name>方法信息</Name>
+      <Field>MethodStr</Field>
+      <RowIndex>0</RowIndex>
+      <ColumnIndex>3</ColumnIndex>
+    </BindingLocation>
+	<BindingLocation>
+      <Name>测量信息</Name>
+      <Field>MeasurePara</Field>
+      <RowIndex>0</RowIndex>
+      <ColumnIndex>4</ColumnIndex>
+    </BindingLocation>
+    <BindingLocation>
+      <Name>重复次数</Name>
+      <Field>RepeatTimes</Field>
+      <RowIndex>0</RowIndex>
+      <ColumnIndex>5</ColumnIndex>
+    </BindingLocation>
+    <BindingLocation>
+      <Name>重复时间间隔</Name>
+      <Field>RepeatInterval</Field>
+      <RowIndex>0</RowIndex>
+      <ColumnIndex>6</ColumnIndex>
+    </BindingLocation>
+	 <BindingLocation>
+      <Name>特征值</Name>
+      <Field>FeaturePoints</Field>
+      <RowIndex>0</RowIndex>
+      <ColumnIndex>7</ColumnIndex>
+    </BindingLocation>
+	  <BindingLocation>
+      <Name>分析方法</Name>
+      <Field>AnalysisMethod</Field>
+      <RowIndex>0</RowIndex>
+      <ColumnIndex>8</ColumnIndex>
+    </BindingLocation>
+	<BindingLocation>
+      <Name>子项目编号</Name>
+      <Field>ItemID</Field>
+      <RowIndex>0</RowIndex>
+      <ColumnIndex>26</ColumnIndex>
+    </BindingLocation>
+  </TemplateLocation>
+  
+
+  <TemplateLocation SheetName="样品池重复性">
+		<BindingLocation>
+		  <Name>1号</Name>
+		  <Field>656.1</Field>
+		  <RowIndex>1</RowIndex>
+		  <ColumnIndex>1</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>2号</Name>
+		  <Field>656.1</Field>
+		  <RowIndex>2</RowIndex>
+		  <ColumnIndex>1</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>3号</Name>
+		  <Field>656.1</Field>
+		  <RowIndex>3</RowIndex>
+		  <ColumnIndex>1</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>4号</Name>
+		  <Field>656.1</Field>
+		  <RowIndex>4</RowIndex>
+		  <ColumnIndex>1</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>5号</Name>
+		  <Field>656.1</Field>
+		  <RowIndex>5</RowIndex>
+		  <ColumnIndex>1</ColumnIndex>
+		</BindingLocation>
+  </TemplateLocation>
+    <TemplateLocation SheetName="波长拟合">
+		<BindingLocation>
+		  <Name>氘灯486.0</Name>
+		  <Field>486.00</Field>
+		  <RowIndex>1</RowIndex>
+		  <ColumnIndex>5</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>氘灯656.1</Name>
+		  <Field>656.10</Field>
+		  <RowIndex>2</RowIndex>
+		  <ColumnIndex>5</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>镨钕滤光片</Name>																																																																																											
+		  <Field>807.4</Field>
+		  <RowIndex>3</RowIndex>
+		  <ColumnIndex>5</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>钬溶液241.0</Name>																																																																																											
+		  <Field>241.0</Field>
+		  <RowIndex>4</RowIndex>
+		  <ColumnIndex>5</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>钬溶液361.0</Name>																																																																																											
+		  <Field>361.0</Field>
+		  <RowIndex>5</RowIndex>
+		  <ColumnIndex>5</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>钬溶液640.7</Name>																																																																																											
+		  <Field>640.7</Field>
+		  <RowIndex>6</RowIndex>
+		  <ColumnIndex>5</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>汞灯296.7</Name>
+		  <Field>296.7</Field>
+		  <RowIndex>7</RowIndex>
+		  <ColumnIndex>5</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>汞灯404.7</Name>
+		  <Field>404.7</Field>
+		  <RowIndex>8</RowIndex>
+		  <ColumnIndex>5</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>汞灯435.8</Name>
+		  <Field>435.8</Field>
+		  <RowIndex>9</RowIndex>
+		  <ColumnIndex>5</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>汞灯546.1</Name>
+		  <Field>546.1</Field>
+		  <RowIndex>10</RowIndex>
+		  <ColumnIndex>5</ColumnIndex>
+		</BindingLocation>
+  </TemplateLocation>  
+ 
+  
+   <TemplateLocation SheetName="波长示值误差校验">
+		<BindingLocation >
+		  <Name>氘灯656.1</Name>
+		  <Field>656.1</Field>
+		  <RowIndex>1</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation >
+		  <Name>氘灯486.0</Name>
+		  <Field>486</Field>
+		  <RowIndex>2</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation >
+		  <Name>镨钕滤光片</Name>
+		  <Field>807.4</Field>
+		  <RowIndex>3</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>				
+		<BindingLocation>
+		  <Name>钬溶液</Name>
+		  <Field>640.7</Field>
+		  <RowIndex>4</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>钬溶液</Name>
+		  <Field>536.8</Field>
+		  <RowIndex>5</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>钬溶液</Name>
+		  <Field>416.5</Field>
+		  <RowIndex>6</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>钬溶液</Name>
+		  <Field>361.0</Field>
+		  <RowIndex>7</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>钬溶液</Name>
+		  <Field>287.4</Field>
+		  <RowIndex>8</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>钬溶液</Name>
+		  <Field>241.0</Field>
+		  <RowIndex>9</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+	</TemplateLocation>
+  
+    <TemplateLocation SheetName="能量扫描">
+		<BindingLocation >
+		  <Name>氘灯486.0</Name>
+		  <Field>486</Field>
+		  <RowIndex>1</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation >
+		  <Name>氘灯656.1</Name>
+		  <Field>656.1</Field>
+		  <RowIndex>2</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation >
+		  <Name>钨灯</Name>
+		  <Field></Field>
+		  <RowIndex>3</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>	
+		<BindingLocation >
+		  <Name>氘灯</Name>
+		  <Field></Field>
+		  <RowIndex>4</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>		
+	</TemplateLocation>
+	
+	<TemplateLocation SheetName="杂散光校验">
+		<BindingLocation>
+		  <Name>220nm杂散光</Name>
+		  <Field>220</Field>
+		  <RowIndex>1</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+		<BindingLocation>
+		  <Name>360nm杂散光</Name>
+		  <Field>360</Field>
+		  <RowIndex>2</RowIndex>
+		  <ColumnIndex>2</ColumnIndex>
+		</BindingLocation>
+	</TemplateLocation>
+  <TemplateLocation SheetName="基线平直度检验">
+		<BindingLocation>
+		  <Name>基线平直度</Name>
+		  <Field></Field>
+		  <RowIndex>1</RowIndex>
+		  <ColumnIndex>1</ColumnIndex>
+		</BindingLocation>
+  </TemplateLocation>
+ </ArrayOfTemplateLocation>

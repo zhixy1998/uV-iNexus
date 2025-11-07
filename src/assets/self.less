@@ -1,0 +1,365 @@
+/*
+ * Module name:  ws_ui_inexus
+ * Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+ * 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+ * Description:
+ */
+
+/* @import '~ant-design-vue/dist/antd.less'; // 引入官方提供的 less 样式入口文件
+@primary-color: #153471; // 全局主色 */
+/* 结果数据按钮样式 */
+.result-btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  > div {
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 28px;
+    cursor: pointer;
+    background-color: @button-bg-color;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+    :first-child {
+      width: 30px;
+      height: 30px;
+      background-size: auto 60%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin-right: 5px;
+    }
+    :last-child {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
+.h2-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #153471;
+  padding: 10px 0;
+}
+/** 树结构样式 */
+.uv-ant-tree {
+  .ant-tree-treenode {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .ant-tree-node-content-wrapper {
+      flex: 1;
+      align-items: center;
+      border-radius: 0 !important;
+      .ant-tree-title {
+        min-height: 50px !important;
+      }
+    }
+    .ant-tree-switcher {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.uv-directory-tree {
+  .ant-tree-treenode {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .ant-tree-node-content-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+  }
+  .ant-tree-switcher {
+    display: flex;
+    align-items: center;
+  }
+  .ant-tree-title {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.card {
+  padding: 15px 35px 25px;
+  box-shadow: 8px 8px 27px 2px #c5c5c5 !important;
+  border-radius: 30px !important;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(20px + 18px + 16px);
+    left: 50%; /* 可调整起始位置 */
+    transform: translateX(-50%);
+    width: 100%; /* 控制边框长度 */
+    height: 1px; /* 高度为边框粗细 */
+    background-color: #153471;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #153471;
+  }
+
+  .card-content {
+    padding: 27px 0px 0px;
+  }
+}
+
+.detail-card {
+  padding: 16px 30px 20px;
+  background: #f4f8ff;
+  border-radius: 16px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(20px + 18px + 16px);
+    left: 50%; /* 可调整起始位置 */
+    transform: translateX(-50%);
+    width: 100%; /* 控制边框长度 */
+    height: 1px; /* 高度为边框粗细 */
+    background-color: #153471;
+  }
+
+  .detail-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #153471;
+  }
+
+  .detail-card-content {
+    padding: 27px 0px 0px;
+  }
+}
+
+/* 表格样式 */
+
+.ant-table {
+  border-radius: 0px !important;
+}
+
+.ant-table-thead > tr > th {
+  font-size: 15px !important;
+  text-align: center !important;
+  font-weight: bold;
+  background: #f2f0f0 !important;
+  padding: 0px;
+  /* color: #fff !important; */
+  height: 40px;
+}
+
+.ant-table-tbody > tr > td {
+  height: 40px;
+  text-align: center;
+  font-size: 15px !important;
+  padding: 4px 8px;
+  background-color: #fff;
+}
+
+.ant-table-wrapper .ant-table-column-sorter {
+  color: #fff !important;
+}
+
+.ant-table-wrapper .ant-table-filter-trigger {
+  color: #fff !important;
+}
+
+.ant-table-cell-content {
+  font-weight: bold !important;
+}
+
+:where(.css-dev-only-do-not-override-o92jb1).ant-table-wrapper
+  .ant-table-cell-scrollbar:not([rowspan]) {
+  //box-shadow: 0 1px 0 1px #153471 !important;
+}
+.ant-table-thead
+  > tr
+  > th:not(
+    :last-child,
+    .ant-table-selection-column,
+    .ant-table-row-expand-icon-cell,
+    [colspan]
+  )::before {
+  background-color: #fff !important;
+}
+
+/* 表单样式 */
+.ant-checkbox + span {
+  color: #595757 !important;
+}
+
+.formTip {
+  font-weight: bold;
+  color: #133379;
+  position: relative;
+  font-size: 15px;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #133379;
+  }
+}
+
+.edit-model-form .ant-form-item {
+  margin-bottom: 15px !important;
+
+  label,
+  .ant-input,
+  .ant-select-selector,
+  .ant-select-selection-item,
+  .ant-input-number-input {
+    color: #595757 !important;
+  }
+
+  .ant-input,
+  .ant-input-number,
+  .ant-input-affix-wrapper,
+  .ant-select-selector {
+    border-color: #595757 !important;
+    background-color: transparent !important;
+  }
+
+  .ant-input-number-input {
+    padding: 0 !important;
+  }
+
+  .ant-input-affix-wrapper {
+    .ant-input {
+      padding: 0 !important;
+    }
+  }
+}
+
+.edit-model-form .ant-form-item .ant-select-selector {
+  height: 28px !important;
+}
+
+.edit-model-form .ant-form-item {
+  .ant-input-affix-wrapper {
+    height: 28px !important;
+    padding: 0 10px !important;
+  }
+
+  .ant-input-number {
+    height: 28px !important;
+    padding: 0 10px !important;
+  }
+
+  .ant-input-number .ant-input-number-input {
+    height: 28px !important;
+    line-height: 28px !important;
+  }
+
+  .ant-input {
+    padding: 2px 10px !important;
+  }
+}
+
+.form-panel {
+  padding: 10px 26px 8px 26px;
+  background: #f1f1f1;
+  border-radius: 12px;
+}
+
+.edit-model-form .form-item-no-margin {
+  margin-bottom: 0 !important;
+}
+/*折叠面板样式*/
+
+.ant-collapse-item {
+  background: #f4faff;
+  border-radius: 22px !important;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  .ant-collapse-expand-icon {
+    color: #d4d5d6;
+  }
+}
+.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content {
+  border-top: 1px solid #153471;
+}
+
+.ant-modal .ant-modal-close-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  background: #113371;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.ant-modal .ant-modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #113371;
+}
+
+.ant-modal {
+  padding: 0;
+  background: #ffffff;
+  box-shadow: 7px 4px 8px 2px rgba(121, 121, 121, 0.34);
+  border-radius: 20px;
+}
+
+.ant-modal .ant-modal-content {
+  padding: 20px 0;
+}
+
+.ant-modal .ant-modal-body {
+  max-height: 647px;
+  overflow: auto;
+  padding: 20px 28px 0 26px !important;
+}
+
+.ant-modal .ant-modal-header {
+  border-bottom: 1px solid #113371;
+  padding: 0 24px 12px 24px;
+}
+
+.ant-modal .ant-modal-footer {
+  padding: 0 24px;
+}
+
+.vxe-switch.is--on .vxe-switch--button {
+  background-color: #67c23a !important;
+}
+
+.shallow-blue-btn {
+  background: @button-bg-color !important;
+}
+
+.shallow-green-btn {
+  background: #c6ffe5 !important;
+}
+
+.shallow-yellow-btn {
+  background: #fee9bb !important;
+}
+/* vexTable表格样式 */
+.vxe-pager {
+  height: 48px !important;
+}

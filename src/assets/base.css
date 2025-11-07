@@ -1,3 +1,10 @@
+/*
+ * Module name:  ws_ui_inexus
+ * Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+ * 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+ * Description:
+ */
+
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #ffffff;
@@ -19,10 +26,7 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
 
-/* semantic color variables for this project */
-:root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -67,6 +71,7 @@ body {
     background-color 0.5s;
   line-height: 1.6;
   font-family:
+    'Microsoft YaHei',
     Inter,
     -apple-system,
     BlinkMacSystemFont,

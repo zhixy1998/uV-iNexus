@@ -1,5 +1,90 @@
+/*
+ * Module name:  ws_ui_inexus
+ * Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+ * 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+ * Description:
+ */
+@import './variables.less';
 @import './base.css';
-@import "tailwindcss";
+@import './self.less';
+@import './ant.less';
+@import 'tailwindcss';
+@layer components {
+  .tail-form-item {
+    @apply flex items-center w-1/2 md:w-1/3;
+    > span {
+      @apply w-22 flex-shrink-0;
+    }
+  }
+  .simple-form-div {
+    @apply pt-[10px] pl-[20px] pr-[20px];
+    .formSimpleTip {
+      @apply !font-bold text-[16px] text-[#616170] !align-middle;
+    }
+    .formSimpleTip::before {
+      content: '';
+      @apply inline-block !align-middle !mr-[5px] w-[5px] h-[5px] rounded-[5px] bg-[#616170];
+    }
+  }
+  /* 页面内的container样式 */
+  .uv-container {
+    @apply shadow shadow-gray-400/50 bg-[#fff] rounded-[15px] px-[18px] py-[16px] h-full overflow-auto;
+  }
+  .uv-container-gap {
+    @apply shadow shadow-gray-400/50 bg-[#fff] rounded-[15px] px-[18px] py-[16px] flex flex-col gap-5 h-full overflow-auto;
+  }
+  .uv-table-page {
+    @apply bg-[#f4f8fe]  flex flex-col h-full pt-[16px] pb-[16px] pr-[20px] pl-[30px] rounded-[16px];
+    .uv-divider {
+      @apply !mt-0 !mb-0 !ml-[-30px] !mr-[-20px] !w-[calc(100%+50px)];
+    }
+  }
+}
+.uv-panel {
+  width: 100%;
+  padding: 0 15px;
+  background: #ffffff;
+  border-radius: 22px;
+  overflow-y: auto;
+}
+
+/* 全局滚动条样式修改 */
+
+/* 滚动条轨道 */
+::-webkit-scrollbar {
+  width: 6px; /* 垂直滚动条宽度 */
+  height: 6px; /* 水平滚动条高度 */
+}
+
+/* 滚动条轨道背景 */
+::-webkit-scrollbar-track {
+  /*background: #fafafa; */
+  background: transparent; /* 与 Ant Design 浅色背景协调 */
+  border-radius: 3px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  background: #eaeaea; /* 滑块默认颜色 */
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+
+/* 滚动条滑块 hover 状态 */
+::-webkit-scrollbar-thumb:hover {
+  background: #dcdcdc; /* hover 时加深颜色 */
+}
+
+/* 滚动条角落（水平和垂直滚动条交汇处） */
+::-webkit-scrollbar-corner {
+  background: #f5f5f5;
+}
+
+/* tag会隐藏,强制不隐藏 */
+.ant-tag-hidden {
+  display: inline-flex !important;
+  opacity: 1 !important;
+}
 
 a,
 .green {
@@ -9,3 +94,65 @@ a,
   padding: 3px;
 }
 
+.ant-switch.ant-switch-checked {
+  background: #67c23a !important;
+  &:hover {
+    background: #67c23a !important;
+  }
+}
+
+.blue-btn {
+  background: linear-gradient(to right, #0366c9 0%, #1178d0 20%, #30aae4 60%, #4ddaf7 100%);
+
+  span {
+    font-weight: bold !important;
+  }
+}
+
+.blue-btn:hover {
+  opacity: 0.7;
+}
+
+.pink-btn {
+  background: linear-gradient(to right, #785be8 0%, #9861df 20%, #bf66d2 60%, #f66fc2 100%);
+  span {
+    font-weight: bold !important;
+  }
+}
+
+.pink-btn:hover {
+  opacity: 0.7;
+}
+
+.red-btn {
+  background: linear-gradient(to right, #eb5a49 0%, #ec5d49 20%, #f38461 60%, #fdac7a 100%);
+  span {
+    font-weight: bold !important;
+  }
+}
+
+.red-btn:hover {
+  opacity: 0.7;
+}
+
+.yellow-btn {
+  background: linear-gradient(to right, #fa7926 0%, #fd9b4a 20%, #fcb55d 60%, #fae779 100%);
+  span {
+    font-weight: bold !important;
+  }
+}
+
+.yellow-btn:hover {
+  opacity: 0.7;
+}
+
+.green-btn {
+  background: linear-gradient(to right, #65ff9d 0%, #43f5b8 20%, #2cedd5 60%, #00e6fa 100%);
+  span {
+    font-weight: bold !important;
+  }
+}
+
+.green-btn:hover {
+  opacity: 0.7;
+}

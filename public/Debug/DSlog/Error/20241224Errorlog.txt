@@ -1,0 +1,12 @@
+[2024-12-24 14:13:05,420]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Monitor.ReliableEnter(Object obj, Boolean& lockTaken)
+   在 System.Threading.Monitor.Enter(Object obj, Boolean& lockTaken)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 86---106420093---2024-12-24 14:13:05.269
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-24 14:13:05,424]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Net.Sockets.SocketException (0x80004005): 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---106420140---2024-12-24 14:13:05.314
+System.Exception: 引发类型为“System.Exception”的异常。

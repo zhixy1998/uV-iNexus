@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  ~ Module name:  ws_ui_inexus
+  ~ Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+  ~ 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+  ~ Description:
+  -->
+
+<testItems>
+	<波长示值误差与重复性校验>
+		<startWl>true</startWl>
+		<endWl>true</endWl>
+		<scanWlInterval>true</scanWlInterval>
+		<timeInterval>false</timeInterval>
+		<totalCount>false</totalCount>
+		<responseTime>false</responseTime>
+		<wl>true</wl>
+		<standard>false</standard>
+	</波长示值误差与重复性校验>
+	<光谱带宽与仪器最小光谱带宽>
+		<startWl>true</startWl>
+		<endWl>true</endWl>
+		<scanWlInterval>true</scanWlInterval>
+		<timeInterval>false</timeInterval>
+		<totalCount>false</totalCount>
+		<responseTime>false</responseTime>
+		<wl>true</wl>
+		<standard>true</standard>
+	</光谱带宽与仪器最小光谱带宽>
+	<基线平直度检验>
+		<startWl>true</startWl>
+		<endWl>true</endWl>
+		<scanWlInterval>true</scanWlInterval>
+		<timeInterval>false</timeInterval>
+		<totalCount>false</totalCount>
+		<responseTime>false</responseTime>
+		<wl>false</wl>
+		<standard>false</standard>
+	</基线平直度检验>
+	<基线暗噪声检验>
+		<startWl>true</startWl>
+		<endWl>true</endWl>
+		<scanWlInterval>true</scanWlInterval>
+		<timeInterval>false</timeInterval>
+		<totalCount> false</totalCount>
+		<responseTime>false</responseTime>
+		<wl>false</wl>
+		<standard>false</standard>
+	</基线暗噪声检验>
+	<噪声检验>
+		<startWl>false</startWl>
+		<endWl>false</endWl>
+		<scanWlInterval>false</scanWlInterval>
+		<timeInterval>true</timeInterval>
+		<totalCount>true</totalCount>
+		<responseTime>true</responseTime>
+		<wl>true</wl>
+		<standard>false</standard>
+	</噪声检验>
+	<波长边缘噪声>
+		<startWl>false</startWl>
+		<endWl>false</endWl>
+		<scanWlInterval>false</scanWlInterval>
+		<timeInterval>true</timeInterval>
+		<totalCount>true</totalCount>
+		<responseTime>true</responseTime>
+		<wl>true</wl>
+		<standard>false</standard>
+	</波长边缘噪声>
+	<杂散光校验>
+		<startWl>false</startWl>
+		<endWl>false</endWl>
+		<scanWlInterval>false</scanWlInterval>
+		<timeInterval>false</timeInterval>
+		<totalCount>false</totalCount>
+		<responseTime>false</responseTime>
+		<wl>true</wl>
+		<standard>false</standard>
+	</杂散光校验>
+	<透射比示值误差与重复性校验>
+		<startWl>false</startWl>
+		<endWl>false</endWl>
+		<scanWlInterval>false</scanWlInterval>
+		<timeInterval>false</timeInterval>
+		<totalCount>false</totalCount>
+		<responseTime>false</responseTime>
+		<wl>true</wl>
+		<standard>true</standard>
+	</透射比示值误差与重复性校验>
+	<漂移检验>
+		<startWl>false</startWl>
+		<endWl>false</endWl>
+		<scanWlInterval>false</scanWlInterval>
+		<timeInterval>true</timeInterval>
+		<totalCount>true</totalCount>
+		<responseTime>true</responseTime>
+		<wl>true</wl>
+		<standard>false</standard>
+	</漂移检验>
+</testItems>

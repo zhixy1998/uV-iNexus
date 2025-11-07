@@ -1,0 +1,11 @@
+#!/user/bin/env sh
+
+#
+# Module name:  ws_ui_inexus
+# Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+# 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+# Description:
+#
+
+# 格式化 -> 修复问题 -> 类型检查 -> 添加到git
+pnpm format && pnpm lint:fix && pnpm type-check && git add .

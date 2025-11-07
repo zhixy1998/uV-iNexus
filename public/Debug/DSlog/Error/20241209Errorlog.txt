@@ -1,0 +1,13 @@
+[2024-12-09 11:21:22,502]
+报错内容:169.254.162.101&101:UDPReaddErr:System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Net.UnsafeNclNativeMethods.OSSOCK.recvfrom(IntPtr socketHandle, Byte* pinnedBuffer, Int32 len, SocketFlags socketFlags, Byte[] socketAddress, Int32& socketAddressSize)
+   在 System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---10056546---2024-12-09 11:21:22.390
+System.Exception: 引发类型为“System.Exception”的异常。
+[2024-12-09 11:21:22,506]
+报错内容:169.254.162.101&101:UDPReaddErr:System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“System.Net.Sockets.UdpClient”。
+   在 System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   在 DriverBase.Pipe.UDPPipeClass.Read() 位置 E:\DSCode\PCTY\紫外\驱动\驱动\UVController\Code\DriverBase\Pipe\UDPPipeClass.cs:行号 88---10056546---2024-12-09 11:21:22.392
+System.Exception: 引发类型为“System.Exception”的异常。

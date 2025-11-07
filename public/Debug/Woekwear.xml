@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Module name:  ws_ui_inexus
+  ~ Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+  ~ 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+  ~ Description:
+  -->
+
+<root>
+	<samplepools Name="样品池重复性">
+		<measureValue Name="测量值（T%）"></measureValue>		
+	</samplepools>	
+	<Fits Name="波长拟合">
+		<eigenValue Name="特征值（nm）"></eigenValue>
+		<measureValue Name="测量值（nm）"></measureValue>
+	</Fits>
+	<energy Name="能量扫描">
+		<eigenValue Name="特征值（nm）"></eigenValue>
+		<measureValue Name="测量值（nm）"></measureValue>
+	</energy>
+	<wave Name="波长示值误差与重复性校验">
+		<eigenValue Name="特征值（nm）"></eigenValue>
+		<measureValue Name="测量值（nm）"></measureValue>
+		<errorValue Name="误差值（nm）"></errorValue>
+		<textExplain Name="波长示值误差(nm)"></textExplain>
+	</wave>	
+	<straylight Name="杂散光校验">
+		<eigenValue Name="波长点"></eigenValue>
+		<measureValue Name="测量值（%）"></measureValue>
+		<textExplain Name="指标要求"></textExplain>
+		<textExplain2 Name="判定结果"></textExplain2>
+	</straylight>
+	<baseline Name="基线平直度检验">
+		<measureValue Name="测量值（Abs）"></measureValue>
+		<textExplain Name="指标要求"></textExplain>
+	</baseline>
+</root>

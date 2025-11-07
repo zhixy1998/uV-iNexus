@@ -1,5 +1,7 @@
 {
   "files": [],
+  "types": [
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
@@ -11,14 +13,16 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
-    "strict": false,
-    "noImplicitAny": false
+    "strict": true,
+    "noImplicitAny": true,
+    "types": ["@vue-office/pdf"]
   },
   "exclude": [
     "src/utils/interceptors.ts",
     "src/views/PageLayoutView.vue",
-    "src/views/PageLayoutView1.vue"
   ]
 }

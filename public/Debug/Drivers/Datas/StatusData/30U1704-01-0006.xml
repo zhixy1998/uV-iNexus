@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Module name:  ws_ui_inexus
+  ~ Copyright (C) 2025 北京普析通用仪器有限责任公司 All Rights Reserved.
+  ~ 此源代码仅限在公司内部使用。未经公司事先书面许可，任何单位和个人不得以任何方式复制、传播本代码的任何部分。
+  ~ Description:
+  -->
+
+<InstrumentStatus>
+  <Gain>
+  </Gain>
+  <ResponseTime>1</ResponseTime>
+  <LampPos>
+  </LampPos>
+  <Slit>
+  </Slit>
+  <Wl>30000</Wl>
+  <Wavelength>
+  </Wavelength>
+  <StartWl>54450</StartWl>
+  <EndWl>19550</EndWl>
+  <ScanWlInterval>1</ScanWlInterval>
+  <ScanSpeed>2</ScanSpeed>
+  <PhotoMode>0</PhotoMode>
+  <SBA>
+  </SBA>
+  <RBA>
+  </RBA>
+  <CBM>
+  </CBM>
+  <AccessoryType>
+  </AccessoryType>
+</InstrumentStatus>
